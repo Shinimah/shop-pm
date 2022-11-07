@@ -31,36 +31,6 @@
         palette="Customizable & Reusable"
         palette2="Take our UX patterns and rebuild"
     />
-    <!-- <CompThree
-    descr4="Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!"
-    descr5="Creativity stimulating lotion. Drink every morning to generate better ideas!"
-    descr6="Prototyping items to create a lot of useless things..."
-    descr7="John Von Ebalkin SPRING"
-    descr8="Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY"
-    descr9="Professional teadrinking set for every designer and developer"
-    descr10="One string Bonsai description"
-    descr11="Simply best item in town to shine bright with your Nine Inch Nails"
-    descr12="KISTOCHKI & KRASIBO. Top cosmetic brand from Chelyabinsk is here!"
-    price4="$12.48"
-    price5="$12.48"
-    price6="$128.99"
-    price7="$13.95"
-    price8="$9.50"
-    price9="$128.99"
-    price10="$11.68"
-    price11="$1.25"
-    price12="$23.25"
-    note4="Worldwide shitting available. Buyers protection possible!"
-    note5="Worldwide shitting available. Buyers protection possible!"
-    note6="Showcasing onHovered state"
-    note7="1258 bids, 359 watchers $5.95 for shipping"
-    note8="Eligible for Shipping To Mars or somewhere else"
-    note9="Eligible for nothing :("
-    note10="Worldwide shitting available. Buyers protection possible!"
-    note11="Eligible for Shipping To Mars or sominline-blockewhere else"
-    note12="1258 bids, 359 watchers $5.95 for shipping"
-    
-    /> -->
 </div>
 </template>
 
@@ -95,7 +65,7 @@ export default defineComponent ({
 
 @mixin centred-flex {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 

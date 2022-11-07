@@ -6,7 +6,8 @@
             </div>
             <h2>{{catHead}}</h2>
         </div>
-        <div class="catalog">
+        <AllCat />
+  <!--     <div class="catalog">
             <ArrowRIc class="right"/>
             <div class="line">
                 <p class="note">{{cat1}}</p>
@@ -51,7 +52,7 @@
         </div>
         <button class="btn">
             {{btn2}}
-        </button>
+        </button>--> 
         <button class="btn2">
             {{btn3}}
             <ArrowDIc class="down"/>
@@ -89,19 +90,20 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import FilterVIc from '@/components/iconComp/filterV.vue';
-import ArrowRIc from '@/components/iconComp/arrowR.vue';
-import ArrowDIc from '@/components/iconComp/arrowD.vue';
+import AllCat from '@/components/iconComp/allCat.vue';
+//import ArrowRIc from '@/components/iconComp/arrowR.vue';
+//import ArrowDIc from '@/components/iconComp/arrowD.vue';
 import ArrowUIc from '@/components/iconComp/arrowU.vue';
-import { mapGetters } from 'vuex';
-import { GETTERS } from '@/store';
 
 export default defineComponent ({
     name: 'CompOne',
     components: {
         FilterVIc,
-        ArrowRIc,
-        ArrowDIc,
+        AllCat,
+ //       ArrowRIc,
+   //     ArrowDIc,
         ArrowUIc,
+     //   ListLeft1,
     },
     props: {
     catHead: String,
@@ -139,11 +141,6 @@ export default defineComponent ({
     year8: String,
     year9: String,
   },
-  computed: {
-        ...mapGetters({
-            products: GETTERS.GET_PRODUCTS
-        })
-    }
 })
 </script>
 

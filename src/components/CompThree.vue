@@ -4,10 +4,10 @@
             v-for="(item, index) in products"
             :key="index"
             :item="item"
-            @open-modal="showModal"
         />
+<!--        @open-modal="showModal"-->
     </div>
-    <button @click="showNewProducts(newProducts)">Показать еще</button>
+ <!----   <button @click="showNewProducts(newProducts)">Показать еще</button>--->
     <div class="footer">
         <div class="foot">
                 <LightIc/>
@@ -32,18 +32,18 @@ import { defineComponent } from 'vue';
 import LightIc from '@/components/iconComp/light.vue';
 import FixIc from '@/components/iconComp/fix.vue';
 import PaletteIc from '@/components/iconComp/palette.vue';
-import ProductItem from './Product.vue'
+import ProductItem from './Product.vue';
 import { mapGetters, mapMutations } from 'vuex';
 import { GETTERS, MUTATIONS } from '@/store';
-import {newProducts} from '@/new-products';
 
 export interface Product {
-    img: string
-    imgAlt: string
-    desc: string
-    price: string
-    note: string
+    img: string,
+    imgAlt: string,
+    desc: string,
+    price: string,
+    note: string,
 }
+
 
 export default defineComponent ({
     name: 'CompThree',
@@ -51,7 +51,8 @@ export default defineComponent ({
         LightIc,
         FixIc,
         PaletteIc,
-        ProductItem
+        ProductItem,
+        
     },
     props: {  
          light: String,
@@ -60,11 +61,6 @@ export default defineComponent ({
          fix2: String,
          palette: String,
          palette2: String,
-    },
-    data () {
-        return {
-            newProducts
-        }
     },
     computed: {
         ...mapGetters({
@@ -76,9 +72,9 @@ export default defineComponent ({
             showNewProducts: MUTATIONS.SET_PRODUCTS
         }),
 
-        showModal(item: Product) {
-            console.log(item.desc)
-        }
+      /*  showModal(item: ListLeft) {
+            console.log(item.element)
+        }*/
     }
 })
 </script>
