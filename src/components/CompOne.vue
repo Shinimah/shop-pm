@@ -7,83 +7,12 @@
             <h2>{{catHead}}</h2>
         </div>
         <AllCat />
-  <!--     <div class="catalog">
-            <ArrowRIc class="right"/>
-            <div class="line">
-                <p class="note">{{cat1}}</p>
-                <p class="note2">{{note1}}</p>
-            </div>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_1}}</p>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat3}}</p>
-        </div>
-        <p>{{cat4_1}}</p>
-        <p>{{cat4_2}}</p>
-        <p>{{cat4_3}}</p>
-        <p>{{cat4_4}}</p>
-        <button class="btn">
-            {{btn1}}
-            <ArrowDIc class="down"/>
-        </button>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_2}}</p>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_3}}</p>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_4}}</p>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_5}}</p>
-        </div>
-        <div class="catalog">
-            <ArrowRIc class="right"/>
-            <p>{{cat2_6}}</p>
-        </div>
-        <button class="btn">
-            {{btn2}}
-        </button>--> 
         <button class="btn2">
             {{btn3}}
             <ArrowDIc class="down"/>
         </button>
-        <div class="filter">
-            <div class="headFilter">
-                <h4>{{title}}</h4>
-                <ArrowUIc class="up"/>
-            </div>
-            <p><input type="checkbox">{{check1}}</p>
-            <p><input type="checkbox">{{check2}}</p>
-            <p><input type="checkbox">{{check3}}</p>
-            <p><input type="checkbox">{{check4}}</p>
-            <p><input type="checkbox">{{check5}}</p>
-            <p><input type="checkbox">{{check6}}</p>
-        </div>
-        <div class="filter">
-            <div class="headFilter">
-                <h4>{{title2}}</h4>
-                <ArrowUIc class="up"/>
-            </div>
-            <p><input type="checkbox">{{year1}}</p>
-            <p><input type="checkbox">{{year2}}</p>
-            <p><input type="checkbox">{{year3}}</p>
-            <p><input type="checkbox">{{year4}}</p>
-            <p><input type="checkbox">{{year5}}</p>
-            <p><input type="checkbox">{{year6}}</p>
-            <p><input type="checkbox">{{year7}}</p>
-            <p><input type="checkbox">{{year8}}</p>
-            <p><input type="checkbox">{{year9}}</p>
-        </div>
+        <ArrowUIc class="up"/>
+        <CheckLeft2 />
     </div>
 </template>
 
@@ -91,8 +20,8 @@
 import { defineComponent } from 'vue';
 import FilterVIc from '@/components/iconComp/filterV.vue';
 import AllCat from '@/components/iconComp/allCat.vue';
-//import ArrowRIc from '@/components/iconComp/arrowR.vue';
-//import ArrowDIc from '@/components/iconComp/arrowD.vue';
+import CheckLeft2 from '@/components/CheckL.vue';
+import ArrowDIc from '@/components/iconComp/arrowD.vue';
 import ArrowUIc from '@/components/iconComp/arrowU.vue';
 
 export default defineComponent ({
@@ -100,10 +29,9 @@ export default defineComponent ({
     components: {
         FilterVIc,
         AllCat,
- //       ArrowRIc,
-   //     ArrowDIc,
+        CheckLeft2,
+       ArrowDIc,
         ArrowUIc,
-     //   ListLeft1,
     },
     props: {
     catHead: String,
@@ -164,14 +92,6 @@ export default defineComponent ({
 }
 #iconV {
     margin: 12px 1px;
-}
-.btn {
-    position: relative;
-    margin-left: 50px;
-    padding: 5px 30px;
-    height: 40px;
-    background-color: #EBF2FF;
-    border: none;
 }
 .btn2 {
     position: relative;

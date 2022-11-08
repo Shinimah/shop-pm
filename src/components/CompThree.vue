@@ -36,23 +36,13 @@ import ProductItem from './Product.vue';
 import { mapGetters, mapMutations } from 'vuex';
 import { GETTERS, MUTATIONS } from '@/store';
 
-export interface Product {
-    img: string,
-    imgAlt: string,
-    desc: string,
-    price: string,
-    note: string,
-}
-
-
 export default defineComponent ({
     name: 'CompThree',
     components: {
         LightIc,
         FixIc,
         PaletteIc,
-        ProductItem,
-        
+        ProductItem, 
     },
     props: {  
          light: String,
