@@ -10,30 +10,44 @@
             <li v-for="(item, index) in list" 
             :key="index"
             >
-                <ArrowRIc />{{item.element}}
-                 <span v-if="item.under">
-                    <br>
-                    {{item.under}}
-                 </span>
-                <div v-if="item.sub">
+                <header @click="visible=!visible">
+                    <ArrowRIc 
+                        :class="['arrow', {'_close': visible}]"
+                    />
+                   {{item.element}}
+                    <span v-if="item.under">
+                        <br>
+                       {{item.under}}
+                    </span>
+                </header>
+                <div v-if="item.sub" v-show="visible">
                     <div v-for="(item2, index2) in item.sub"
                         :key="index2">
                         <ul>
-                        <li><ArrowRIc />{{item2.element}}</li>
+                        <li @click="visible2=!visible2">
+                            <ArrowRIc 
+                             :class="['arrow', {'_close': visible2}]"
+                           />
+                            {{item2.element}}
+                        </li>
                          <span v-if="item2.under">
                             <br>
                             {{item2.under}}
                         </span>
-                        <div v-if="item2.sub2">
+                        <div v-if="item2.sub2" v-show="visible2">
                               <div v-for="(item3, index3) in item2.sub2"
                                     :key="index3">
                                     <ul>
-                                    <li><ArrowRIc />{{item3.element}}</li>
+                                    <li li @click="visible3=!visible3">
+                                        <ArrowRIc 
+                                           :class="['arrow', {'_close': visible3}]"
+                                        />
+                                        {{item3.element}}</li>
                                       <span v-if="item2.under">
                                         <br>
                                         {{item2.under}}
                                     </span>
-                                        <div v-if="item2.sub2">
+                                        <div v-if="item2.sub2" v-show="visible3">
                                     <div v-for="(item4, index4) in item3.sub3"
                                        :key="index4">
                                        <ul>
@@ -50,10 +64,10 @@
                         </div>
                     </ul>
                     </div>
-                </div>               
+                </div>
             </li>
+            <button class="btn">Expand</button>  
         </ul>
-        <button class="btn">Expand</button>
     </div>
 </template>
 
@@ -67,6 +81,14 @@ import { GETTERS } from '@/store';
 export default defineComponent ({
     name: 'ListLeft',
 
+    data () {
+        return {
+            visible: true,
+            visible2: true,
+            visible3: true,
+        }
+    },
+
     components: {
         ArrowDIc,
         ArrowRIc,
@@ -74,9 +96,9 @@ export default defineComponent ({
 
     computed: {
         ...mapGetters({
-            list: GETTERS.GET_LIST
+            list: GETTERS.GET_LIST,
         })
-    }
+    },
 })
 </script>
 
@@ -101,5 +123,11 @@ span {
 .list {
     display: inline;
     align-items: center;
+}
+.arrow {
+    transition: 0.15s linear transform;
+    &._close {
+        transform: rotate(90deg);
+    }
 }
 </style>

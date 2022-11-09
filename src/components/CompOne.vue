@@ -7,11 +7,9 @@
             <h2>{{catHead}}</h2>
         </div>
         <AllCat />
-        <button class="btn2">
-            {{btn3}}
-            <ArrowDIc class="down"/>
-        </button>
-        <ArrowUIc class="up"/>
+        <FilterMain 
+        btn="Collapsed filters"/>
+       
         <CheckLeft2 />
     </div>
 </template>
@@ -20,18 +18,14 @@
 import { defineComponent } from 'vue';
 import FilterVIc from '@/components/iconComp/filterV.vue';
 import AllCat from '@/components/iconComp/allCat.vue';
-import CheckLeft2 from '@/components/CheckL.vue';
-import ArrowDIc from '@/components/iconComp/arrowD.vue';
-import ArrowUIc from '@/components/iconComp/arrowU.vue';
+import FilterMain from '@/components/FilterMain.vue';
 
 export default defineComponent ({
     name: 'CompOne',
     components: {
         FilterVIc,
         AllCat,
-        CheckLeft2,
-       ArrowDIc,
-        ArrowUIc,
+        FilterMain,
     },
     props: {
     catHead: String,

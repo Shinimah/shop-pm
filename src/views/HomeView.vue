@@ -19,34 +19,10 @@
         <CompOne 
         catHead="Departments"
         btn3="Collapsed filters"
-        title=""
-        check1=" "
-        check2=" "
-        check3=" "
-        check4=" "
-        check5=" "
-        check6=" "
-        title2=""
-        year1=" 1954"
-        year2=" 1955"
-        year3=" 1956"
-        year4=" 1957"
-        year5=" 1958"
-        year6=" 1959"
-        year7=" 1960"
-        year8=" 1961"
-        year9=" 1962-2020"
         />
       </div>
       <div class="main_right">
         <CompTwo 
-        btn1="Useless first"
-        btn2="Condition"
-        btn3="Delivery options"
-        filter1="Show all"
-        filter2="Auction"
-        filter3="Buy now"
-        rel="Related"
         />
       </div>
     </div>
