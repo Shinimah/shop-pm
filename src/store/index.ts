@@ -23,6 +23,21 @@ export interface Product {
 export interface ListLeft {
   element: string,
   under?: string,
+  sub: SubCat[],
+}
+
+export interface SubCat {
+  element: string,
+  sub2: SubCat2[],
+}
+
+export interface SubCat2 {
+  element: string,
+  sub3: SubCat3[]
+}
+
+interface SubCat3 {
+  element: string,
 }
 
 interface FiltItem {

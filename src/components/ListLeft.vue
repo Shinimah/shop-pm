@@ -1,70 +1,60 @@
 <template>
-   <!-- <div class="item" @click="$emit('open-modal', item)">
-        <img :src="item.img" :alt="item.imgAlt">
-        <p class="description">{{item.desc}}</p>
-        <p class="price">{{item.price}}</p>
-        <p class="note">{{item.note}}</p>
-    </div>-->
     <div>
         <ul class="list">
-            <li v-for="(item, index) in list" 
-            :key="index"
-            >
-                <header @click="visible=!visible">
-                    <ArrowRIc 
-                        :class="['arrow', {'_close': visible}]"
-                    />
-                   {{item.element}}
-                    <span v-if="item.under">
-                        <br>
-                       {{item.under}}
-                    </span>
-                </header>
+            <li>
+                <ListLeftItem 
+                    v-for="(item, index) in list"
+                    :key="index"
+                    :item="item"
+                />
+                
+              <!--   
                 <div v-if="item.sub" v-show="visible">
                     <div v-for="(item2, index2) in item.sub"
                         :key="index2">
                         <ul>
-                        <li @click="visible2=!visible2">
-                            <ArrowRIc 
+                            <li @click="visible2=!visible2">
+                              <ArrowRIc 
                              :class="['arrow', {'_close': visible2}]"
-                           />
+                                 />
                             {{item2.element}}
-                        </li>
-                         <span v-if="item2.under">
-                            <br>
-                            {{item2.under}}
-                        </span>
-                        <div v-if="item2.sub2" v-show="visible2">
-                              <div v-for="(item3, index3) in item2.sub2"
+                            </li>
+                            <span v-if="item2.under">
+                               <br>
+                               {{item2.under}}
+                            </span>
+                             <div v-if="item2.sub2" v-show="visible2">
+                                  <div v-for="(item3, index3) in item2.sub2"
                                     :key="index3">
                                     <ul>
-                                    <li li @click="visible3=!visible3">
-                                        <ArrowRIc 
-                                           :class="['arrow', {'_close': visible3}]"
-                                        />
-                                        {{item3.element}}</li>
+                                      <li @click="visible3=!visible3">
+                                            <ArrowRIc 
+                                               :class="['arrow', {'_close': visible3}]"
+                                            />
+                                          {{item3.element}}
+                                      </li>
                                       <span v-if="item2.under">
                                         <br>
                                         {{item2.under}}
-                                    </span>
-                                        <div v-if="item2.sub2" v-show="visible3">
-                                    <div v-for="(item4, index4) in item3.sub3"
-                                       :key="index4">
-                                       <ul>
-                                            <li>{{item4.element}}</li>
-                                        </ul>
-                                    </div>
-                                    <button class="btn">
-                                        Show more
-                                        <ArrowDIc />
-                                       </button>
-                                    </div>
+                                      </span>
+                                      <div v-if="item2.sub2" v-show="visible3">
+                                            <div v-for="(item4, index4) in item3.sub3"
+                                             :key="index4">
+                                              <ul>
+                                                    <li>{{item4.element}}</li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn">
+                                                Show more
+                                                <ArrowDIc />
+                                            </button>
+                                       </div>
                                     </ul>
-                              </div>
-                        </div>
-                    </ul>
+                                 </div>
+                            </div>
+                        </ul>
                     </div>
-                </div>
+                </div>-->
             </li>
             <button class="btn">Expand</button>  
         </ul>
@@ -73,8 +63,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ArrowRIc from '@/components/iconComp/arrowR.vue';
-import ArrowDIc from '@/components/iconComp/arrowD.vue';
+import ListLeftItem from '@/components/ListLeftItem.vue';
 import { mapGetters } from 'vuex';
 import { GETTERS } from '@/store';
 
@@ -90,8 +79,7 @@ export default defineComponent ({
     },
 
     components: {
-        ArrowDIc,
-        ArrowRIc,
+       ListLeftItem,
     },
 
     computed: {
