@@ -5,6 +5,7 @@ export const MUTATIONS = {
   SET_LIST: 'SET_LIST',
   SET_CHECK: 'SET_CHECK',
   SET_MENU: 'SET_MENU',
+  SET_FOOTER: 'SET_FOOTER',
 }
 
 export const GETTERS = {
@@ -12,6 +13,7 @@ export const GETTERS = {
   GET_LIST: 'GET_LIST',
   GET_CHECK: 'GET_CHECK',
   GET_MENU: 'GET_MENU',
+  GET_FOOTER: 'GET_FOOTER',
 }
 
 export interface Product {
@@ -57,11 +59,19 @@ export interface Menu {
   element: string
 }
 
+export interface Footer {
+  icon: string
+  alt: string
+  title: string
+  message: string
+}
+
 interface State {
   products: Product[],
   list: ListLeft[],
   check: Check[],
   menu: Menu[],
+  footer: Footer[],
 }
 
 export default createStore<State>({
@@ -70,12 +80,14 @@ export default createStore<State>({
     list: [],
     check: [],
     menu: [],
+    footer: [],
   },
   getters: {
     [GETTERS.GET_PRODUCTS]: (state) => state.products,
     [GETTERS.GET_LIST]: (state) => state.list,
     [GETTERS.GET_CHECK]: (state) => state.check,
     [GETTERS.GET_MENU]: (state) => state.menu,
+    [GETTERS.GET_FOOTER]: (state) => state.footer,
   },
   mutations: {
     [MUTATIONS.SET_PRODUCTS]: (state, payload): void => {
@@ -89,6 +101,9 @@ export default createStore<State>({
     },
     [MUTATIONS.SET_MENU]: (state, payload): void => {
       state.menu = payload
+    },
+    [MUTATIONS.SET_FOOTER]: (state, payload): void => {
+      state.footer = payload
     },
   },
   actions: {

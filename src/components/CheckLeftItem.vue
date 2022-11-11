@@ -50,7 +50,9 @@ export default defineComponent ({
 
 header {
     display: flex;
+    font-size: 14px;
     align-items: center;
+    padding: 0px 5px 1px;
     justify-content: space-between;
 }
 .title {
@@ -64,7 +66,6 @@ header {
     background-color: #F7F7FA;
 }
 .arrow {
-    // position: absolute;
     top: 10px;
     right: 5px;
 

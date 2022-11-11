@@ -1,6 +1,6 @@
 <template>
     <div class="item" @click="$emit('open-modal', item)">
-        <img :src="item.img" :alt="item.imgAlt">
+        <img :src="require(`@/components/images/${item.img}`)" :alt="item.imgAlt">
         <p class="description">{{item.desc}}</p>
         <p class="price">{{item.price}}</p>
         <p class="note">{{item.note}}</p>

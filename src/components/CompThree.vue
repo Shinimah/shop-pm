@@ -7,7 +7,12 @@
         />
     </div>
     <div class="footer">
-        <div class="foot">
+        <FootContent 
+        v-for="(item, index) in footer"
+        :key="index"
+        :item="item"
+        />
+        <!-- <div class="foot">
                 <LightIc/>
             <p class="footTitle">{{light}}</p>
             <p class="more">{{light2}}</p>
@@ -21,15 +26,16 @@
             <PaletteIc/>
             <p class="footTitle">{{palette}}</p>
             <p class="more">{{palette2}}</p>
-        </div>
+        </div> -->
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import LightIc from '@/components/iconComp/light.vue';
-import FixIc from '@/components/iconComp/fix.vue';
-import PaletteIc from '@/components/iconComp/palette.vue';
+ import { defineComponent } from 'vue';
+// import LightIc from '@/components/iconComp/light.vue';
+// import FixIc from '@/components/iconComp/fix.vue';
+// import PaletteIc from '@/components/iconComp/palette.vue';
+import FootContent from './Footer.vue';
 import ProductItem from './Product.vue';
 import { mapGetters, mapMutations } from 'vuex';
 import { GETTERS, MUTATIONS } from '@/store';
@@ -37,10 +43,11 @@ import { GETTERS, MUTATIONS } from '@/store';
 export default defineComponent ({
     name: 'CompThree',
     components: {
-        LightIc,
-        FixIc,
-        PaletteIc,
+        // LightIc,
+        // FixIc,
+        // PaletteIc,
         ProductItem, 
+        FootContent
     },
     props: {  
          light: String,
@@ -52,7 +59,8 @@ export default defineComponent ({
     },
     computed: {
         ...mapGetters({
-            products: GETTERS.GET_PRODUCTS
+            products: GETTERS.GET_PRODUCTS,
+            footer: GETTERS.GET_FOOTER
         })
     },
     methods: {

@@ -1,6 +1,10 @@
 <template>
   <div class="menuItem">
-    <img :src="item.icon" :alt="item.alt">
+    <component :is="item.icon"/>
+    <svg>
+      <use :href="`#${item.icon}`"></use>
+    </svg>
+    <!-- <img :src="item.icon" :alt="item.alt"> -->
     <p>{{item.element}}</p>
   </div>
 </template>

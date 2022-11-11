@@ -1,6 +1,9 @@
+import { shallowRef } from "vue"
+import ClothIcon from "./components/iconComp/cloth.vue"
+
 export const menu = [
     {
-        icon: require('/home/user-prog/second/src/icons/hanger.png'),
+        icon: 'cloth',
         alt: 'icon',
         element: 'Clothing & Shoes'
     },
