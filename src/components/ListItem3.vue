@@ -1,18 +1,33 @@
 <template>
-    <div @click="visible=!visible">
-        {{item.element}}
-    </div>
-            <ArrowDIc 
-                :class="['arrow', {'_close': !visible}]"
-            />
-    <div 
-    v-for="(sub3, index) in item.sub3"
-    :key="index"
-    > 
-        <p v-show="visible">
-            {{sub3.element}}
-        </p>
-    </div>
+    <ul>
+        <li>
+            <div @click="visible=!visible">
+                <ArrowDIc 
+                    :class="['arrow', {'_close': !visible}]"
+                />
+                {{item.element}}
+            </div>   
+            <ul>
+                <li>   
+                    <div 
+                    v-for="(sub3, index) in item.sub3"
+                        :key="index"
+                        v-show="visible"
+                    >
+                        {{sub3.element}}
+                    </div>
+                    <button class="btn" 
+                        @click="visible=!visible" 
+                        v-show="!visible"
+                    >
+                        Show more
+                        <ArrowDIc />
+                    </button>
+              </li>
+           </ul>
+        </li>
+    </ul>
+    
 </template>
 
 <script lang="ts">
@@ -33,6 +48,7 @@ export default defineComponent ({
     data () {
         return {
             visible: true,
+            visible2: true,
         }
     },
 
@@ -44,6 +60,11 @@ export default defineComponent ({
 
 <style lang="scss" scoped>
 
+ul {
+    list-style-type: none;
+    align-items: center;
+    padding-left: 10px;
+}
 .arrow {
     // position: absolute;
     top: 10px;
@@ -54,5 +75,15 @@ export default defineComponent ({
     &._close {
         transform: rotate(-90deg);
     }
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    margin: 10px 40px;
+    padding: 10px 15px;
+    height: 40px;
+    background-color: #EBF2FF;
+    border: none;
 }
 </style>

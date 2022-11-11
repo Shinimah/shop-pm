@@ -1,24 +1,16 @@
 <template>
   <div class="home">
-    <Menu 
-    item1="Clothing & Shoes"
-    item2="Entertainment"
-    item3="Music"
-    item4="Sport & Lifestyle"
-    item5="Pets"
-    item6="Kitchen Accessoires"
-    item7="Travel Equipment"
-    item8="Growing & Garden"
-    item9="Electrical Tools"
-    item10="Mother Care"
-    item11="Toys & Entertainment"
-    item12="Vintage"
-    />
+    <div class="menu">
+      <MenuHead
+        v-for="(item, index) in menu"
+        :key="index"
+        :item="item"
+     />
+    </div>
     <div class="main">
       <div class="main_left">
         <CompOne 
         catHead="Departments"
-        btn3="Collapsed filters"
         />
       </div>
       <div class="main_right">
@@ -30,26 +22,41 @@
 </template>
 
 <script lang="ts">
-// import { Options, Vue } from 'vue-class-component';
 import { defineComponent } from 'vue'
-import Menu from '@/components/MenuHead.vue'; 
-import CompOne from '@/components/CompOne.vue';// @ is an alias to /src
+import MenuHead from '@/components/MenuHead.vue'; 
+import CompOne from '@/components/CompOne.vue';
 import CompTwo from '@/components/CompTwo.vue';
+import { mapGetters, mapMutations } from 'vuex';
+import { GETTERS, MUTATIONS } from '@/store';
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-    Menu,
+    MenuHead,
     CompOne,
     CompTwo,
-  }
+  },
+  computed: {
+        ...mapGetters({
+            menu: GETTERS.GET_MENU
+        })
+    },
+    methods: {
+        ...mapMutations({
+            showMenu: MUTATIONS.SET_MENU
+        }),
+    }
 })
 </script>
 
 <style lang="scss" scoped>
 .home {
   margin: 0 130px;
+}
+.menu {
+  display: flex;
+  align-items: center;
 }
 .main {
   display: flex;

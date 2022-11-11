@@ -6,8 +6,8 @@
                     v-for="(item, index) in list"
                     :key="index"
                     :item="item"
+                    v-show="!visible"
                 />
-                
               <!--   
                 <div v-if="item.sub" v-show="visible">
                     <div v-for="(item2, index2) in item.sub"
@@ -44,10 +44,7 @@
                                                     <li>{{item4.element}}</li>
                                               </ul>
                                             </div>
-                                            <button class="btn">
-                                                Show more
-                                                <ArrowDIc />
-                                            </button>
+                                            
                                        </div>
                                     </ul>
                                  </div>
@@ -56,7 +53,11 @@
                     </div>
                 </div>-->
             </li>
-            <button class="btn">Expand</button>  
+            <button class="btn" 
+            @click="visible=!visible"
+            >
+                Expand
+            </button>  
         </ul>
     </div>
 </template>
@@ -72,9 +73,7 @@ export default defineComponent ({
 
     data () {
         return {
-            visible: true,
-            visible2: true,
-            visible3: true,
+            visible: true
         }
     },
 
@@ -111,6 +110,7 @@ span {
 .list {
     display: inline;
     align-items: center;
+
 }
 .arrow {
     transition: 0.15s linear transform;

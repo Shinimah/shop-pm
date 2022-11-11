@@ -1,20 +1,21 @@
 <template>
-        <div @click="visible=!visible">
-            <ArrowDIc 
-                :class="['arrow', {'_close': !visible}]"
-            />
-        {{item.element}}       
-        </div>   
-        <div> 
-            <p v-show="visible">            
-                {{item.element}}
-            </p>
-        </div>
-        <list-item-3 
-           v-for="(item2, index) in item.sub2"
-            :key="index"
-            :item="item2"
-        /> 
+    <uL>
+        <li>
+             <div @click="visible=!visible">
+                    <ArrowDIc 
+                        :class="['arrow', {'_close': !visible}]"
+                    />
+                    {{item.element}}       
+            </div>   
+            <div v-show="visible">      
+                    <list-item-3 
+                    v-for="(item2, index) in item.sub2"
+                        :key="index"
+                        :item="item2"
+                />            
+            </div>
+       </li>
+    </uL>
 </template>
 
 <script lang="ts">

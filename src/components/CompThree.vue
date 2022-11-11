@@ -5,9 +5,7 @@
             :key="index"
             :item="item"
         />
-<!--        @open-modal="showModal"-->
     </div>
- <!----   <button @click="showNewProducts(newProducts)">Показать еще</button>--->
     <div class="footer">
         <div class="foot">
                 <LightIc/>
@@ -61,10 +59,6 @@ export default defineComponent ({
         ...mapMutations({
             showNewProducts: MUTATIONS.SET_PRODUCTS
         }),
-
-      /*  showModal(item: ListLeft) {
-            console.log(item.element)
-        }*/
     }
 })
 </script>

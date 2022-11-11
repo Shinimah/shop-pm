@@ -1,29 +1,26 @@
 <template>
-    <div class="title"> 
-        <header @click="visible=!visible">
-            <ArrowDIc 
-                :class="['arrow', {'_close': !visible}]"
-            />
-            {{item.element}}
-              <span v-if="item.under">
+    <div class="list"> 
+        <ul>
+            <li>
+                <header @click="visible=!visible">
+                    <ArrowDIc 
+                        :class="['arrow', {'_close': !visible}]"
+                    />
+                    {{item.element}}
+                    <span class="under" v-if="item.under">
                         <br>
-                       {{item.under}}
-              </span> 
-        </header>      
-        <div
-            v-for="(sub, index2) in item.sub"
-            :key="index2"
-        >
-            <p v-show="visible">            
-                {{sub.element}}
-            </p>
-        </div>
-        
-        <ListItem2 
-            v-for="(item2, index) in item.sub"
-            :key="index"
-            :item="item2"
-        />
+                        {{item.under}}
+                    </span> 
+                </header>      
+                <div v-show="visible">
+                    <ListItem2 
+                        v-for="(item2, index) in item.sub"
+                        :key="index"
+                        :item="item2"
+                    />  
+                </div>
+            </li>
+        </ul>    
     </div>
 </template>
 
@@ -58,6 +55,12 @@ export default defineComponent ({
 
 <style lang="scss" scoped>
 
+ul {
+    list-style-type: none;
+    align-items: center;
+    padding-left: 10px;
+}
+
 .arrow {
     top: 10px;
     right: 5px;
@@ -67,5 +70,15 @@ export default defineComponent ({
     &._close {
         transform: rotate(-90deg);
     }
+}
+
+.under {
+    margin-left: 30px;
+    position: relative;
+    font-size: 14px;
+    line-height: 143%;
+    display: flex;
+    align-items: center;
+    color: #787885;
 }
 </style>

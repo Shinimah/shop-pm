@@ -9,7 +9,8 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { Product } from '@/store'
+import { Product } from '@/store';
+
 export default defineComponent({
     name: 'ProductItem',
 

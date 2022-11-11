@@ -327,8 +327,20 @@ export const list = [
                     element: 'Food',
                     sub2: [
                             {
-                                 element: 'Collection',
-                            }
+                                 element: 'Meat',
+                            },
+                            {
+                                element: 'Milk',
+                                sub3: [
+                                    {
+                                        element: 'Cream'
+                                    },
+
+                                    {
+                                        element: 'Butter'
+                                    },
+                                ]
+                           }
                           ]
                 },
             {
