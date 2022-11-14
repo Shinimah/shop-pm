@@ -76,6 +76,8 @@ export default defineComponent ({
     display: flex;
     flex-flow: row wrap;
     width: 1114px;
+    margin: 5px;
+    border: none;
 }
 .price {
     font-size: 23px;

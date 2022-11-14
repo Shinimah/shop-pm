@@ -12,7 +12,7 @@
     <router-link class="links2" to="/ce">Consume Electronics</router-link>
     <button class="btnHead">Sign In</button>
     <button class="btnHead">My card</button>
-    <img src="/home/user-prog/second/src/components/images/Photo.png" alt="photo">
+    <img src="./components/images/Photo.png" alt="photo">
   </nav>
   <router-view/>
 </template>

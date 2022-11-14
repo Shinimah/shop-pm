@@ -60,7 +60,7 @@ export interface Menu {
 }
 
 export interface Footer {
-  icon: string
+  img: string
   alt: string
   title: string
   message: string

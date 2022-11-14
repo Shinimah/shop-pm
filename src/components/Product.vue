@@ -22,3 +22,31 @@ export default defineComponent({
     }
 })
 </script>
+
+<style>
+.item {
+    margin: 1px;
+    padding: 4px;
+    
+}
+.description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #19191D;
+}
+.price {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.note {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #787885;
+}
+</style>

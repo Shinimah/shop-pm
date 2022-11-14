@@ -1,6 +1,8 @@
 <template>
     <div class="item">
-        <img :src="item.icon" :alt="item.alt">
+        <svg>
+          <use v-bind:xlink:href="getIcon"></use>
+        </svg>
         <p class="title">{{item.title}}</p>
         <p class="message">{{item.message}}</p>
     </div>
@@ -18,6 +20,17 @@ export default defineComponent({
             type: Object as PropType<Footer>,
             required: true
         }
+    },
+    computed: {
+    getIcon () {
+      return `./sprite.svg#${this.item.img}`
     }
+  }
 })
 </script>
+
+<style lang="scss" scoped>
+.item {
+    display: flex;
+}
+</style>

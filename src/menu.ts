@@ -1,64 +1,61 @@
-import { shallowRef } from "vue"
-import ClothIcon from "./components/iconComp/cloth.vue"
-
 export const menu = [
     {
-        icon: 'cloth',
+       icon: 'icon1',
         alt: 'icon',
         element: 'Clothing & Shoes'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/cinema.vue'),
+        icon: 'icon2',
         alt: 'icon',
         element: 'Entertainment'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/concert.vue'),
+        icon: 'icon3',
         alt: 'icon',
         element: 'Music'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/fitness.vue'),
+        icon: 'icon4',
         alt: 'icon',
         element: 'Sport & Lifestyle'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/pets.vue'),
+        icon: 'icon5',
         alt: 'icon',
         element: 'Pets'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/kitchen.vue'),
+        icon: 'icon6',
         alt: 'icon',
         element: 'Kitchen Accessoires'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/travel.vue'),
+        icon: 'icon7',
         alt: 'icon',
         element: 'Travel Equipment'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/garden.vue'),
+        icon: 'icon8',
         alt: 'icon',
         element: 'Growing & Garden'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/electric.vue'),
+        icon: 'icon9',
         alt: 'icon',
         element: 'Electrical Tools'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/baby.vue'),
+        icon: 'icon10',
         alt: 'icon',
         element: 'Mother Care'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/toys.vue'),
+        icon: 'icon11',
         alt: 'icon',
         element: 'Toys & Entertainment'
     },
     {
-        icon: require('/home/user-prog/second/src/components/iconComp/vintage.vue'),
+        icon: 'icon12',
         alt: 'icon',
         element: 'Vintage'
     },

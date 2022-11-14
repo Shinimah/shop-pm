@@ -1,10 +1,10 @@
 <template>
   <div class="menuItem">
-    <component :is="item.icon"/>
-    <svg>
-      <use :href="`#${item.icon}`"></use>
-    </svg>
-    <!-- <img :src="item.icon" :alt="item.alt"> -->
+    <div class="item">
+        <svg>
+          <use v-bind:xlink:href="getIcon"></use>
+        </svg>
+     </div>
     <p>{{item.element}}</p>
   </div>
 </template>
@@ -22,30 +22,32 @@ export default defineComponent ({
       required: true
     }
   },
+  computed: {
+    getIcon () {
+      return `./sprite.svg#${this.item.icon}`
+    }
+  }
 })
 </script>
 
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
 
 a {
   color: #42b983;
 }
-.menu {
+.menuItem {
   display: flex;
   width: 1920px;
-  height: 60px;
-  padding: 0 100px;
-}
-.menuItem {
-  padding: 7px 19px;
+  height: 50px;
+  padding: 17px 19px;
   border: solid rgb(220, 220, 255);
   border-radius: 0.5vmin;
-  text-align:center;
 }
-.menuItem p {
-  margin: 1px;
+.item {
+  align-items: center;
+}
+p {
+  display: flex;
+  text-align:center;
 }
 </style>
