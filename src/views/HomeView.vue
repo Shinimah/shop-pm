@@ -57,6 +57,7 @@ export default defineComponent({
 .menu {
   display: flex;
   align-items: center;
+  width: 1920px;
 }
 .main {
   display: flex;

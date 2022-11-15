@@ -22,6 +22,7 @@ export interface Product {
   desc: string,
   price: string,
   note: string,
+  rating: string,
 }
 
 export interface ListLeft {

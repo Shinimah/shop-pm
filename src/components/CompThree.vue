@@ -8,9 +8,9 @@
     </div>
     <div class="footer">
         <FootContent 
-        v-for="(item, index) in footer"
+        v-for="(item2, index) in footer"
         :key="index"
-        :item="item"
+        :item="item2"
         />
         <!-- <div class="foot">
                 <LightIc/>
@@ -32,9 +32,6 @@
 
 <script lang="ts">
  import { defineComponent } from 'vue';
-// import LightIc from '@/components/iconComp/light.vue';
-// import FixIc from '@/components/iconComp/fix.vue';
-// import PaletteIc from '@/components/iconComp/palette.vue';
 import FootContent from './Footer.vue';
 import ProductItem from './Product.vue';
 import { mapGetters, mapMutations } from 'vuex';
@@ -43,9 +40,6 @@ import { GETTERS, MUTATIONS } from '@/store';
 export default defineComponent ({
     name: 'CompThree',
     components: {
-        // LightIc,
-        // FixIc,
-        // PaletteIc,
         ProductItem, 
         FootContent
     },
@@ -76,48 +70,36 @@ export default defineComponent ({
     display: flex;
     flex-flow: row wrap;
     width: 1114px;
-    margin: 5px;
+    margin: 3px;
     border: none;
 }
-.price {
-    font-size: 23px;
-    font-weight: 700;
-}
-.note {
-    font-size: 13px;
-    color: grey;
-}
+// .price {
+//     font-size: 23px;
+//     font-weight: 700;
+// }
+// .note {
+//     font-size: 13px;
+//     color: grey;
+// }
 .item {
     display: inline-block;
-    border: solid rgb(207, 207, 207);
     width: 250px;
-    height: 472px;
+    height: 492px;
     margin: 0 7px;
 }
-
-.foot {
-    display: inline-block;
-    text-align: center;
-    margin: 35px 0px;
-    padding: 5px;
-    width: 351px;
+// .item2 {
+//     display: flex;
+//     width: 351px;
+//     height: 156px;
+// }
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1114px;
     height: 156px;
-    background-color: #EDEDF0;
-    border-radius: 0.8vmin;
+    margin: 35px 0;
 }
-.footTitle {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin:0;
-}
-.more {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    text-align: center;
-}
-.middle {
-    margin: 0 15px;
-}
+// .middle {
+//     margin: 0 15px;
+// }
 </style>

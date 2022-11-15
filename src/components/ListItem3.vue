@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li>
-            <div @click="visible=!visible">
+            <div  @click="visible=!visible">
                 <ArrowDIc 
                     :class="['arrow', {'_close': !visible}]"
                 />
@@ -61,6 +61,7 @@ export default defineComponent ({
 <style lang="scss" scoped>
 
 ul {
+    display: flex;
     list-style-type: none;
     align-items: center;
     padding-left: 10px;
@@ -79,6 +80,7 @@ ul {
 
 .btn {
     display: flex;
+    align-items: center;
     position: relative;
     margin: 10px 40px;
     padding: 10px 15px;

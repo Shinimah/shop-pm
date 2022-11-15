@@ -1,6 +1,6 @@
 <template>
     <div class="item">
-        <svg>
+        <svg class="img">
           <use v-bind:xlink:href="getIcon"></use>
         </svg>
         <p class="title">{{item.title}}</p>
@@ -30,7 +30,27 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.item {
-    display: flex;
+div.item {
+  display: grid;
+    width: 357px;
+    height: 156px;
+    background-color: #EDEDF0;
+    border-radius: 0.8vmin;
+    border: none;
+}
+.img {
+  padding: 0 135px;
+}
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin:0;
+}
+.message {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-align: center;
 }
 </style>

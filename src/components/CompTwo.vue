@@ -28,7 +28,7 @@
         <button-filter class="btn-filter"/>
         <button-view class="btn-view"/>
     </div>
-    <!-- <p>{{rel}}</p> -->
+    <p><strong>Related</strong></p>
     <CompThree
     />
 </div>
@@ -61,6 +61,15 @@ export default defineComponent ({
     align-items: center;
     justify-content: flex-start;
 }
+@mixin buttons {
+    display: flex;
+    height: 36px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    align-items: flex-start;
+}
 
 .rightUp {
     // display: flex;
@@ -72,17 +81,12 @@ export default defineComponent ({
 }
 .btn-view {
   align-items: flex-end;
+  margin-right: 1px;
 }
 .btn-filter {
 margin-right: 100px;
 }
 .btn {
-    display: flex;
-    height: 36px;
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 4px;
-    align-items: flex-start;
+    @include buttons;
 }
 </style>
