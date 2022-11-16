@@ -12,21 +12,6 @@
         :key="index"
         :item="item2"
         />
-        <!-- <div class="foot">
-                <LightIc/>
-            <p class="footTitle">{{light}}</p>
-            <p class="more">{{light2}}</p>
-        </div>
-        <div class="foot middle">
-            <FixIc/>
-            <p class="footTitle">{{fix}}</p>
-            <p class="more">{{fix2}}</p>
-        </div>
-        <div class="foot">
-            <PaletteIc/>
-            <p class="footTitle">{{palette}}</p>
-            <p class="more">{{palette2}}</p>
-        </div> -->
     </div>
 </template>
 

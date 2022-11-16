@@ -10,8 +10,8 @@
       <CloseIc class="icon-close" @click="clearInput"/>
     </div>
     <router-link class="links2" to="/ce">Consume Electronics</router-link>
-    <button class="btnHead">Sign In</button>
-    <button class="btnHead">My card</button>
+    <button class="btnHead" @click="sign">Sign In</button>
+    <button class="btnHead" @click="Mycard">My card</button>
     <img src="./components/images/Photo.png" alt="photo">
   </nav>
   <router-view/>
@@ -36,6 +36,12 @@ export default defineComponent({
   methods: {
     clearInput () {
       this.inputValue = ''
+    },
+    sign () {
+      alert("Sign In!")
+    },
+    Mycard () {
+      alert ("My Profile")
     }
   }
 })
@@ -114,17 +120,23 @@ nav {
 .links {
   margin: 0 15px;
   font-size: 18px;
+  &:hover {
+    color: red;
+  }
 }
 .links2 {
   margin-left: 30px;
   margin-right: 125px;
   font-size: 18px;
+  &:hover {
+    color: red;
+  }
 }
 .button {
   color: #42b983;
 
   &:hover {
-    color: #2c3e50;
+    color: #800350;
   }
 }
 </style>

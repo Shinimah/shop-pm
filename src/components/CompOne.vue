@@ -4,7 +4,7 @@
             <div id="iconV">
                 <FilterVIc/>
             </div>
-            <h2>{{catHead}}</h2>
+            <h2>Departments</h2>
         </div>
         <AllCat />
         <FilterMain 
@@ -27,42 +27,6 @@ export default defineComponent ({
         AllCat,
         FilterMain,
     },
-    props: {
-    catHead: String,
-    note1: String,
-    cat1: String,
-    cat2_1: String,
-    cat3: String,
-    cat4_1: String,
-    cat4_2: String,
-    cat4_3: String,
-    cat4_4: String,
-    cat2_2: String,
-    cat2_3: String,
-    cat2_4: String,
-    cat2_5: String,
-    cat2_6: String,
-    btn1: String,
-    btn2: String,
-    btn3: String,
-    title: String,
-    check1: String,
-    check2: String,
-    check3: String,
-    check4: String,
-    check5: String,
-    check6: String,
-    title2: String,
-    year1: String,
-    year2: String,
-    year3: String,
-    year4: String,
-    year5: String,
-    year6: String,
-    year7: String,
-    year8: String,
-    year9: String,
-  },
 })
 </script>
 
@@ -80,6 +44,9 @@ export default defineComponent ({
     border-radius: 1vmin;
     width: 304px;
     height: 56px;
+    &:hover {
+    color: red;
+  }
 }
 .leftTitle h2 {
     margin: 15px 50px;
@@ -136,5 +103,8 @@ export default defineComponent ({
     position: absolute;
     top: 18px;
     right: 5px;
+}
+h2:hover {
+    color: red;
 }
 </style>

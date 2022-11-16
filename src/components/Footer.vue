@@ -47,10 +47,16 @@ div.item {
     font-weight: 600;
     text-align: center;
     margin:0;
+    &:hover {
+    color: red;
+  }
 }
 .message {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     text-align: center;
+    &:hover {
+    color: red;
+  }
 }
 </style>

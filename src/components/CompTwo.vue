@@ -11,14 +11,14 @@
                     </select>
                </div>
             </button>
-            <div class="btn">
+            <div class="btn2">
                 <select name="" >
                         <option value="">Condition</option>
                         <option value="">Price</option>
                         <option value="">Size</option>
                     </select>
                 </div>
-            <div class="btn">
+            <div class="btn2">
                 <select name="">
                         <option value="">Delivery options</option>
                         <option value="">Other options</option>
@@ -88,5 +88,12 @@ margin-right: 100px;
 }
 .btn {
     @include buttons;
+}
+.btn2 {
+    @include buttons;
+    height: 36px;
+}
+#sel {
+    margin-bottom: 10px;
 }
 </style>

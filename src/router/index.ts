@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue';
+import ProdCard from '../components/ProdCard.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -25,6 +26,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'ce',
     component: () => import('../views/ConsumeView.vue')
   },
+  {
+    path: '/prod',
+    name: 'prod',
+    component: ProdCard
+},
 ]
 
 const router = createRouter({

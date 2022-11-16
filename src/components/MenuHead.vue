@@ -1,5 +1,5 @@
 <template>
-  <div class="menuItem">
+  <div class="menuItem" @click="paint">
     <div class="item">
         <svg class="img">
           <use v-bind:xlink:href="getIcon"></use>
@@ -22,6 +22,13 @@ export default defineComponent ({
       required: true
     }
   },
+
+  methods: {
+    paint() {
+      alert ("menu")
+    }
+  },
+
   computed: {
     getIcon () {
       return `./sprite.svg#${this.item.icon}`
@@ -38,26 +45,35 @@ a {
 .menuItem {
   display: flex;
   width: 1920px;
-  height: 56px;
+  height: 66px;
   padding: 0 1px;
-  border: solid rgb(220, 220, 255);
+  border: none;
   border-radius: 0.5vmin;
+  color: #9696A0;
 }
 // .item {
 //   align-items: center;
 // }
-
+.menuItem:hover, 
+.menuItem:hover p {
+  color: red;
+}
 .img {
+  width: 20px;
+  height:20px;
   position: absolute;
-  padding: 0 50px;
+  padding: 5px 60px;
 }
 p {
   display: flex;
-  text-align:center;
+  align-items: flex-end;
+  text-align: center;
+  margin: 5px 25px 2px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  color: #787885;
   line-height: 143%;
 }
 </style>

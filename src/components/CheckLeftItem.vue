@@ -7,7 +7,7 @@
             />
         </header>
         
-        <div
+        <div class="checItem"
             v-for="(filt, index2) in item.filt"
             :key="index2"
         >
@@ -74,5 +74,9 @@ header {
     &._close {
         transform: rotate(180deg);
     }
+}
+.checItem {
+    font-size: 16px;
+    line-height: 150%;
 }
 </style>

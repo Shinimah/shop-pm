@@ -1,7 +1,7 @@
 <template>
     <uL>
         <li>
-             <div @click="visible=!visible">
+             <div class="item" @click="visible=!visible">
                     <ArrowDIc 
                         :class="['arrow', {'_close': !visible}]"
                     />
@@ -36,7 +36,7 @@ export default defineComponent ({
 
     data () {
         return {
-            visible: true,
+            visible: false,
         }
     },
 
@@ -59,5 +59,8 @@ export default defineComponent ({
     &._close {
         transform: rotate(-90deg);
     }
+}
+.item:hover {
+    color: red;
 }
 </style>

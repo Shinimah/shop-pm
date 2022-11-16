@@ -2,7 +2,7 @@
     <div class="list"> 
         <ul>
             <li>
-                <header @click="visible=!visible">
+                <header class="item" @click="visible=!visible">
                     <ArrowDIc 
                         :class="['arrow', {'_close': !visible}]"
                     />
@@ -80,5 +80,8 @@ ul {
     display: flex;
     align-items: center;
     color: #787885;
+}
+.item:hover {
+    color: red;
 }
 </style>

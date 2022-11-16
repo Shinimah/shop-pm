@@ -8,56 +8,14 @@
                     :item="item"
                     v-show="!visible"
                 />
-              <!--   
-                <div v-if="item.sub" v-show="visible">
-                    <div v-for="(item2, index2) in item.sub"
-                        :key="index2">
-                        <ul>
-                            <li @click="visible2=!visible2">
-                              <ArrowRIc 
-                             :class="['arrow', {'_close': visible2}]"
-                                 />
-                            {{item2.element}}
-                            </li>
-                            <span v-if="item2.under">
-                               <br>
-                               {{item2.under}}
-                            </span>
-                             <div v-if="item2.sub2" v-show="visible2">
-                                  <div v-for="(item3, index3) in item2.sub2"
-                                    :key="index3">
-                                    <ul>
-                                      <li @click="visible3=!visible3">
-                                            <ArrowRIc 
-                                               :class="['arrow', {'_close': visible3}]"
-                                            />
-                                          {{item3.element}}
-                                      </li>
-                                      <span v-if="item2.under">
-                                        <br>
-                                        {{item2.under}}
-                                      </span>
-                                      <div v-if="item2.sub2" v-show="visible3">
-                                            <div v-for="(item4, index4) in item3.sub3"
-                                             :key="index4">
-                                              <ul>
-                                                    <li>{{item4.element}}</li>
-                                              </ul>
-                                            </div>
-                                            
-                                       </div>
-                                    </ul>
-                                 </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>-->
             </li>
-            <button class="btn" 
-            @click="visible=!visible"
-            >
-                Expand
-            </button>  
+            <li>
+                <button class="btn" 
+                  @click="visible=!visible"
+                 >
+                     Expand
+                </button>
+            </li>  
         </ul>
     </div>
 </template>
@@ -73,7 +31,7 @@ export default defineComponent ({
 
     data () {
         return {
-            visible: true
+            visible: false
         }
     },
 
@@ -117,5 +75,8 @@ span {
     &._close {
         transform: rotate(90deg);
     }
+}
+.item:hover {
+    color: red;
 }
 </style>

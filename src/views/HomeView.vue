@@ -5,17 +5,14 @@
         v-for="(item, index) in menu"
         :key="index"
         :item="item"
-     />
+      />
     </div>
     <div class="main">
       <div class="main_left">
-        <CompOne 
-        catHead="Departments"
-        />
+        <CompOne />
       </div>
       <div class="main_right">
-        <CompTwo 
-        />
+        <CompTwo />
       </div>
     </div>
   </div>

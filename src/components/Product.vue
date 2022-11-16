@@ -1,13 +1,13 @@
 <template>
-    <div class="item">
+    <div class="item"><router-link to="/prod">
         <img :src="require(`@/components/images/${item.img}`)" :alt="item.imgAlt">
         <p class="description">{{item.desc}}</p>
         <p class="price">{{item.price}}</p>
-        <p class="note">{{item.note}}</p>
+        <p class="note">{{item.note}}</p></router-link>
         <div class="rating">
             <StarRating />
             <p class="rate">{{item.rating}}</p>
-        <button class="btn">
+        <button @click="liking" class="btn">
             <like-ic class="like"/>
             Watch
         </button>
@@ -29,11 +29,11 @@ export default defineComponent({
         LikeIc,
     },
 
-    // methods: {
-    //     liking ({
-
-    //     })
-    // },
+    methods: {
+        liking () {
+            alert ("Liked")
+        }
+    },
 
     props: {
         item: {
@@ -89,5 +89,13 @@ export default defineComponent({
     border: solid 1px;
     border-color: #9DC2FF;
     background-color: white;
+}
+p {
+    &:visited {
+      color: rgb(113, 10, 173);
+}
+    &:hover {
+      color: red;
+ }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li>
-            <div  @click="visible=!visible">
+            <div class="item" @click="visible=!visible">
                 <ArrowDIc 
                     :class="['arrow', {'_close': !visible}]"
                 />
@@ -9,7 +9,7 @@
             </div>   
             <ul>
                 <li>   
-                    <div 
+                    <div class="item"
                     v-for="(sub3, index) in item.sub3"
                         :key="index"
                         v-show="visible"
@@ -87,5 +87,8 @@ ul {
     height: 40px;
     background-color: #EBF2FF;
     border: none;
+}
+.item:hover {
+    color: red;
 }
 </style>
