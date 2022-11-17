@@ -13,73 +13,76 @@
         >
             <label v-show="visible">
                 <input type="checkbox">               
-                {{filt.element}}
+                 {{filt.element}}
             </label>
         </div>
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
-import ArrowDIc from '@/components/iconComp/arrowD.vue';
-import { Check } from '@/store';
+    import { defineComponent, PropType } from 'vue';
+    import ArrowDIc from '@/components/iconComp/arrowD.vue';
+    import { Check } from '@/store';
 
-export default defineComponent ({
-    name: 'CheckLeftItem',
+    export default defineComponent ({
+        name: 'CheckLeftItem',
 
-    props: {
-        item: {
-            type: Object as PropType<Check>,
-            required: true
-        }
-    },
+        props: {
+            item: {
+                type: Object as PropType<Check>,
+                required: true,
+            }
+        },
 
-    data () {
-        return {
-            visible: true,
-        }
-    },
+        data () {
+            return {
+                visible: true,
+            }
+        },
 
-    components: {
-        ArrowDIc
-    },
-})
+        components: {
+            ArrowDIc
+        },
+    })
 </script>
 
 <style lang="scss" scoped>
 
-header {
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-    padding: 0px 5px 1px;
-    justify-content: space-between;
-    &:hover {
-        color: red;
+    header {
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        padding: 0px 5px 1px;
+        justify-content: space-between;
+        &:hover {
+            color: red;
+        }
     }
-}
-.title {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
-    width: 304px;
-    padding: 15px 10px 10px;
-    margin: 20px 0;
-    background-color: #F7F7FA;
-}
-.arrow {
-    top: 10px;
-    right: 5px;
 
-    transition: 0.15s linear transform;
-
-    &._close {
-        transform: rotate(180deg);
+    .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        width: 304px;
+        padding: 15px 10px 10px;
+        margin: 20px 0;
+        background-color: #F7F7FA;
     }
-}
-.checItem {
-    font-size: 16px;
-    line-height: 150%;
-}
+
+    .arrow {
+        top: 10px;
+        right: 5px;
+
+        transition: 0.15s linear transform;
+
+        &._close {
+            transform: rotate(180deg);
+        }
+    }
+
+    .checItem {
+        font-size: 16px;
+        line-height: 150%;
+    }
 </style>

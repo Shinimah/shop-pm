@@ -38,7 +38,7 @@ export interface SubCat {
 
 export interface SubCat2 {
   element: string,
-  sub3: SubCat3[]
+  sub3: SubCat3[],
 }
 
 interface SubCat3 {
@@ -46,25 +46,25 @@ interface SubCat3 {
 }
 
 interface FiltItem {
-  element: string
+  element: string,
 }
 
 export interface Check {
   element: string,
-  filt: FiltItem[]
+  filt: FiltItem[],
 }
 
 export interface Menu {
-  icon: string
-  alt: string
-  element: string
+  icon: string,
+  alt: string,
+  element: string,
 }
 
 export interface Footer {
-  img: string
-  alt: string
-  title: string
-  message: string
+  img: string,
+  alt: string,
+  title: string,
+  message: string,
 }
 
 interface State {
@@ -93,19 +93,19 @@ export default createStore<State>({
   mutations: {
     [MUTATIONS.SET_PRODUCTS]: (state, payload): void => {
       state.products = payload
-    },
+     },
     [MUTATIONS.SET_LIST]: (state, payload): void => {
       state.list = payload
-    },
+     },
     [MUTATIONS.SET_CHECK]: (state, payload): void => {
       state.check = payload
-    },
+      },
     [MUTATIONS.SET_MENU]: (state, payload): void => {
       state.menu = payload
-    },
+     },
     [MUTATIONS.SET_FOOTER]: (state, payload): void => {
       state.footer = payload
-    },
+      },
   },
   actions: {
   },

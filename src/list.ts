@@ -340,18 +340,18 @@ export const list = [
                                         element: 'Butter'
                                     },
                                 ]
-                           }
-                          ]
+                            }
+                    ]
                 },
-            {
-                element: 'Toys'
-            },
-            {
-                element: 'Drugs'
-            },
-            {
-                element: 'Drinks'
-            },
+                {
+                    element: 'Toys'
+                },
+                {
+                    element: 'Drugs'
+                },
+                {
+                    element: 'Drinks'
+                },
         ]
     }
 ]

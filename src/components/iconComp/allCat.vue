@@ -3,11 +3,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import ListLeft from '../ListLeft.vue';
+    import { defineComponent } from 'vue';
+    import ListLeft from '../ListLeft.vue';
 
-export default defineComponent({
-    components: { ListLeft },
-    name: 'AllCat',
-})
+    export default defineComponent({
+        name: 'AllCat',
+
+        components: { ListLeft },
+    })
 </script>

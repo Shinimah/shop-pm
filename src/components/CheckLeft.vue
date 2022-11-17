@@ -9,22 +9,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import CheckLeftItem from '@/components/CheckLeftItem.vue';
-import { mapGetters } from 'vuex';
-import { GETTERS } from '@/store';
+    import { defineComponent } from 'vue';
+    import CheckLeftItem from '@/components/CheckLeftItem.vue';
+    import { mapGetters } from 'vuex';
+    import { GETTERS } from '@/store';
 
-export default defineComponent ({
-    name: 'CheckLeft',
+    export default defineComponent ({
+        name: 'CheckLeft',
 
-    components: {
-        CheckLeftItem
-    },
+        components: {
+            CheckLeftItem
+        },
 
-    computed: {
-        ...mapGetters({
-            check: GETTERS.GET_CHECK
-        })
-    }
-})
+        computed: {
+            ...mapGetters({
+                check: GETTERS.GET_CHECK
+            })
+        }
+    })
 </script>

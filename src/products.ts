@@ -7,7 +7,7 @@ export const products = [
         note: 'Eligible for Shipping To Mars or somewhere else',
         rating: '4.05',
     },
-     {
+    {
         img: 'boots.png',
         imgAlt: 'boots',
         desc: 'Lee Pucker design. Leather botinki for handsome designers. Free shipping',
@@ -94,6 +94,5 @@ export const products = [
         price: '$23.25',
         note: '1258 bids, 359 watchers $5.95 for shipping',
         rating: '4.56',
-    },
-    
+    }, 
 ]
