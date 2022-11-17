@@ -9,7 +9,7 @@
             </div>   
             <ul>
                 <li>   
-                    <div class="item"
+                    <div class="itemLast"
                     v-for="(sub3, index) in item.sub3"
                         :key="index"
                         v-show="visible"
@@ -88,7 +88,19 @@ ul {
     background-color: #EBF2FF;
     border: none;
 }
-.item:hover {
+@mixin item {
+    display: flex;
+    align-items: center;
+    &:hover {
     color: red;
+}
+}
+.item {
+    @include item;
+}
+.itemLast {
+    @include item;
+    margin-left: 20px;
+    line-height: 140%;
 }
 </style>

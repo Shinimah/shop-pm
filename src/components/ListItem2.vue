@@ -60,7 +60,11 @@ export default defineComponent ({
         transform: rotate(-90deg);
     }
 }
-.item:hover {
+.item {
+    display: flex;
+    align-items: center;
+    &:hover {
     color: red;
+}
 }
 </style>

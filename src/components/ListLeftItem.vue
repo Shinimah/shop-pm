@@ -3,10 +3,12 @@
         <ul>
             <li>
                 <header class="item" @click="visible=!visible">
-                    <ArrowDIc 
-                        :class="['arrow', {'_close': !visible}]"
-                    />
-                    {{item.element}}
+                    <div class="itemTitle">
+                        <ArrowDIc 
+                            :class="['arrow', {'_close': !visible}]"
+                        />
+                        {{item.element}}
+                    </div>
                     <span class="under" v-if="item.under">
                         <br>
                         {{item.under}}
@@ -80,6 +82,10 @@ ul {
     display: flex;
     align-items: center;
     color: #787885;
+}
+.itemTitle {
+    display: flex;
+    align-items: center;
 }
 .item:hover {
     color: red;

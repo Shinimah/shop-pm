@@ -54,6 +54,9 @@ header {
     align-items: center;
     padding: 0px 5px 1px;
     justify-content: space-between;
+    &:hover {
+        color: red;
+    }
 }
 .title {
     font-family: 'Inter', sans-serif;
