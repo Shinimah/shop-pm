@@ -45,6 +45,8 @@
 
   .menuItem {
     display: flex;
+    flex-direction: row;
+    align-content: center;
     width: 1920px;
     height: 66px;
     padding: 0 1px;
@@ -62,14 +64,15 @@
     width: 20px;
     height:20px;
     position: absolute;
-    padding: 5px 60px;
+    padding: 5px 70px;
   }
 
   p {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
-    margin: 5px 25px 2px;
+    padding-top: 25px;
+    padding-left: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

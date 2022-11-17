@@ -4,7 +4,7 @@
             <div class="options">
                 <button class="btn">
                     <div>
-                        <label for="sel">Sort by</label>
+                        <label class="sort" for="sel">Sort by</label>
                         <select name="" id="sel">
                             <option value="">Useless first</option>
                             <option value="">Usable first</option>
@@ -60,14 +60,9 @@
         width: 1114px;
     }
 
-    @mixin centred-flex {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
     @mixin buttons {
         display: flex;
+        align-items: center;
         height: 36px;
         margin: 10px;
         padding: 10px;
@@ -77,11 +72,19 @@
     }
 
     .rightUp {
-        @include centred-flex;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 1px;
     }
 
     .options {
         display: flex;
+        align-items: center;
+    }
+
+    .sort {
+        padding: 5px;
     }
 
     .btn-view {
@@ -90,7 +93,7 @@
     }
 
     .btn-filter {
-    margin-right: 100px;
+    margin-right: 150px;
     }
 
     .btn {
@@ -99,10 +102,10 @@
 
     .btn2 {
         @include buttons;
-        height: 36px;
+        height: 19px;
     }
 
     #sel {
-        margin-bottom: 10px;
+        padding: 0 6px;
     }
 </style>

@@ -14,19 +14,15 @@
                         :key="index"
                         v-show="visible"
                     >
-                        <div v-if="item.sub3.length > 4">
                             {{sub3.element}}
-                        </div>
-                        <div v-else>
-                            <button class="btn" 
+                    </div>     
+                    <button class="btn" 
                                 @click="visible=!visible" 
                                 v-show="!visible"
-                            >
-                                Show more
-                                <ArrowDIc />
-                            </button>
-                        </div>
-                    </div>     
+                    >
+                        Show more
+                        <ArrowDIc />
+                    </button>
               </li>
            </ul>
         </li>
@@ -50,7 +46,7 @@
 
         data () {
             return {
-                visible: true,
+                visible: false,
                 visible2: true,
             }
         },
@@ -83,7 +79,6 @@
     .btn {
         display: flex;
         align-items: center;
-        position: relative;
         margin: 10px 40px;
         padding: 10px 15px;
         height: 40px;

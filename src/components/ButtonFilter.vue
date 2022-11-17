@@ -18,9 +18,11 @@
     .filter {
         display: flex;
         align-content: center;
+        align-items: center;
         margin: 0 30px;
         width: 200px;
         height: 36px;
+        color: #2264D1;
     }
 
     .btn2 {
@@ -28,5 +30,6 @@
         width: 90px;
         border: none;
         border-radius: 4px;
+        color: #5A5B6A;
     }
 </style>>
