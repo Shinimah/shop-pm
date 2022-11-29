@@ -2,7 +2,7 @@
   <div class="menuItem" @click="paint">
     <div class="item">
         <svg class="img">
-          <use v-bind:xlink:href="getIcon"></use>
+          <use :xlink:href="getIcon"></use>
         </svg>
     </div>
     <p>{{item.element}}</p>
