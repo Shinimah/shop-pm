@@ -1,7 +1,7 @@
 <template>
     <div class="img-filter">
-        <button class="btn3"><ViewList/></button>
-        <button class="btn3"><ViewGrid/></button>
+        <button class="btn3"><ViewList /></button>
+        <button class="btn3"><ViewGrid /></button>
     </div>
 </template>
 

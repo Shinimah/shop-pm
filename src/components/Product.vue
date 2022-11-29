@@ -10,7 +10,7 @@
             <StarRating />
             <p class="rate">{{item.rating}}</p>
             <button @click="liking" class="btn">
-                <like-ic class="like"/>
+                <LikeIc class="like"/>
                      Watch
             </button>
         </div>
