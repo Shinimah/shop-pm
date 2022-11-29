@@ -22,6 +22,8 @@
   <li>недоработаны кнопки по сортировке товаров</li>
 </ul>
 
+![Image alt](https://github.com/Shinimah/shop-pm/master/mainpage.png)
+
 ## Project setup
 ```
 npm install
