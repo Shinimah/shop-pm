@@ -22,6 +22,8 @@
   <li>недоработаны кнопки по сортировке товаров</li>
 </ul>
 
+# Главная страница
+
 ![Image alt](https://github.com/Shinimah/shop-pm/blob/master/mainpage.png)
 
 ## Project setup
