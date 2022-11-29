@@ -1,4 +1,4 @@
-# second
+# О проекте
 
 ## Project setup
 ```
