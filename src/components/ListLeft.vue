@@ -11,7 +11,7 @@
             </li>
             <li>
                 <button class="btn" 
-                  @click="visible=!visible"
+                  @click="isvisible"
                 >
                   Expand
                 </button>
@@ -37,6 +37,12 @@
 
         components: {
         ListLeftItem,
+        },
+
+        methods: {
+            isvisible () {
+                this.visible = !this.visible
+            }
         },
 
         computed: {

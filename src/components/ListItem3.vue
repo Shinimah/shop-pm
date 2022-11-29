@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li>
-            <div class="item" @click="visible=!visible">
+            <div class="item" @click="isvisible">
                 <ArrowDIc 
                     :class="['arrow', {'_close': !visible}]"
                 />
@@ -17,7 +17,7 @@
                             {{sub3.element}}
                     </div>     
                     <button class="btn" 
-                                @click="visible=!visible" 
+                                @click="isvisible" 
                                 v-show="!visible"
                     >
                         Show more
@@ -53,6 +53,12 @@
 
         components: {
             ArrowDIc
+        },
+
+        methods: {
+            isvisible () {
+                this.visible = !this.visible
+            }
         },
     })
 </script>
