@@ -22,7 +22,7 @@
   <li>недоработаны кнопки по сортировке товаров</li>
 </ul>
 
-![Image alt](https://github.com/Shinimah/shop-pm/master/mainpage.png)
+![Image alt](https://github.com/Shinimah/shop-pm/blob/master/mainpage.png)
 
 ## Project setup
 ```
