@@ -1,6 +1,7 @@
 <template>
   <nav>
     <img id="logo" src="./assets/icons/logo-group.svg"/>
+    <img id="logo" src="./icons/Group1.svg" alt="logo"/>
     <p class="title">Shopka</p>
     <router-link 
       class="links" to="/sell"
