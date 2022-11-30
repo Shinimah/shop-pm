@@ -4,7 +4,7 @@
         <StarRate />
         <StarRate />
         <StarRate />
-        <star-half />
+        <StarHalf />
     </div>
 </template>
 

@@ -26,8 +26,8 @@
                 </div>
             </div>
 
-            <button-filter class="btn-filter"/>
-            <button-view class="btn-view"/>
+            <ButtonFilter class="btn-filter"/>
+            <ButtonView class="btn-view"/>
 
         </div>
 

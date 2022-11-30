@@ -1,5 +1,5 @@
 <template>
-    <list-left/>
+    <ListLeft />
 </template>
 
 <script lang="ts">
