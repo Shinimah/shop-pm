@@ -62,7 +62,7 @@
 
   .main {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   .main_left {
