@@ -65,10 +65,6 @@
         font-weight: 700;
         font-size: 24px;
         color: rgba(0, 0, 0, 0.87);
-
-        @media (min-width: 900px) {
-            color: tomato;
-        }
     }
 
     .note {
