@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="isvisible">
+    <button class="btn" @click="showList">
         {{btn}}
         <ArrowDIc 
             :class="['arrow', {'_close': !visible}]"
@@ -30,7 +30,7 @@
         },
 
         methods: {
-            isvisible () {
+            showList () {
                 this.visible = !this.visible
             }
         },

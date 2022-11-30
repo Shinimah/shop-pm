@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li>
-            <div class="item" @click="isvisible">
+            <div class="item" @click="showList">
                 <ArrowDIc 
                     :class="['arrow', {'_close': !visible}]"
                 />
@@ -17,7 +17,7 @@
                             {{sub3.element}}
                     </div>     
                     <button class="btn" 
-                                @click="isvisible" 
+                                @click="showList" 
                                 v-show="!visible"
                     >
                         Show more
@@ -56,7 +56,7 @@
         },
 
         methods: {
-            isvisible () {
+            showList () {
                 this.visible = !this.visible
             }
         },

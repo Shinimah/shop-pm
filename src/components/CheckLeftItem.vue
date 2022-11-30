@@ -1,6 +1,6 @@
 <template>
     <div class="title"> 
-        <header @click="isvisible">
+        <header @click="showList">
             <h3>{{item.element}}</h3>
             <ArrowDIc 
                 :class="['arrow', {'_close': !visible}]"
@@ -45,7 +45,7 @@
         },
 
         methods: {
-            isvisible () {
+            showList () {
                 this.visible = !this.visible
             }
         },

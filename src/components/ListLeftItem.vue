@@ -2,7 +2,7 @@
     <div class="list"> 
         <ul>
             <li>
-                <header class="item" @click="isvisible">
+                <header class="item" @click="showList">
                     <div class="itemTitle">
                         <ArrowDIc 
                             :class="['arrow', {'_close': !visible}]"
@@ -54,7 +54,7 @@
         },
 
         methods: {
-            isvisible () {
+            showList () {
                 this.visible = !this.visible
             }
         },

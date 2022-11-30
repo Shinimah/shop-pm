@@ -11,7 +11,7 @@
             </li>
             <li>
                 <button class="btn" 
-                  @click="isvisible"
+                  @click="showList"
                 >
                   Expand
                 </button>
@@ -40,7 +40,7 @@
         },
 
         methods: {
-            isvisible () {
+            showList () {
                 this.visible = !this.visible
             }
         },
