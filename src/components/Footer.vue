@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <svg class="img">
-      <use v-bind:xlink:href="getIcon"></use>
+      <use :xlink:href="getIcon"></use>
     </svg>
     <p class="title">{{item.title}}</p>
     <p class="message">{{item.message}}</p>
