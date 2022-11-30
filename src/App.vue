@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <img id="logo" src="./icons/Group1.svg"/>
+    <img id="logo" src="./assets/icons/logo-group.svg"/>
     <p class="title">Shopka</p>
     <router-link 
       class="links" to="/sell"
@@ -13,11 +13,11 @@
        Register
     </router-link> 
     <div class="search-wrapper">
-        <SearchIc class="icon"/>
+        <SearchIcon class="icon"/>
         <input type="text" 
           class="search" placeholder="searching..."
           v-model="inputValue">
-        <CloseIc class="icon-close" @click="clearInput"/>
+        <CloseIcon class="icon-close" @click="clearInput"/>
     </div>
     <router-link 
         class="links2" to="/ce"
@@ -34,22 +34,22 @@
     >
         My card
     </button>
-    <img src="./components/images/Photo.png" alt="photo">
+    <img src="./assets/images/avatar-man.png" alt="photo">
   </nav>
   <router-view/>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import SearchIc from '@/components/iconComp/search.vue';
-  import CloseIc from '@/components/iconComp/close.vue';
+  import SearchIcon from '@/components/iconComp/SearchIcon.vue';
+  import CloseIcon from '@/components/iconComp/CloseIcon.vue';
 
   export default defineComponent({
     name: 'App',
 
     components: {
-      SearchIc,
-      CloseIc
+      SearchIcon,
+      CloseIcon
     },
 
     data () {

@@ -9,10 +9,10 @@
     </div>
     <div class="main">
       <div class="main_left">
-        <CompOne />
+        <CategoryCheckbox />
       </div>
       <div class="main_right">
-        <CompTwo />
+        <ProductHead />
       </div>
     </div>
   </div>
@@ -20,9 +20,9 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import MenuHead from '@/components/MenuHead.vue'; 
-  import CompOne from '@/components/CompOne.vue';
-  import CompTwo from '@/components/CompTwo.vue';
+  import MenuHead from '@/components/MenuHead.vue';
+  import CategoryCheckbox from '@/components/CategoryCheckbox.vue';
+  import ProductHead from '@/components/ProductHead.vue';
   import { mapGetters, mapMutations } from 'vuex';
   import { GETTERS, MUTATIONS } from '@/store';
 
@@ -31,8 +31,8 @@
 
     components: {
       MenuHead,
-      CompOne,
-      CompTwo,
+      CategoryCheckbox,
+      ProductHead,
     },
 
     computed: {

@@ -7,8 +7,8 @@
 
 <script lang="ts">
     import {defineComponent} from 'vue';
-    import ViewList from '@/components/iconComp/viewL.vue';
-    import ViewGrid from '@/components/iconComp/viewG.vue';
+    import ViewList from '@/components/iconComp/ViewList.vue';
+    import ViewGrid from '@/components/iconComp/ViewGrid.vue';
 
     export default defineComponent({
         name: 'ButtonView',
