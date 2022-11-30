@@ -1,7 +1,7 @@
 <template>
     <uL>
         <li>
-            <div class="item" @click="visible=!visible">
+            <div class="item" @click="showList">
                 <ArrowDIc 
                     :class="['arrow', {'_close': !visible}]"
                  />
@@ -43,6 +43,12 @@
         components: {
             ArrowDIc,
             ListItem3,
+        },
+
+        methods: {
+            showList () {
+                this.visible = !this.visible
+            }
         },
     })
 </script>

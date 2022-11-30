@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="visible=!visible">
+    <button class="btn" @click="showList">
         {{btn}}
         <ArrowDIc 
             :class="['arrow', {'_close': !visible}]"
@@ -27,6 +27,12 @@
         components: {
             CheckLeft,
             ArrowDIc,
+        },
+
+        methods: {
+            showList () {
+                this.visible = !this.visible
+            }
         },
         
         props: {
