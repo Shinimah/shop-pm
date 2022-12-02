@@ -1,17 +1,17 @@
 <template>
-  <HeadTitle />
+  <NavigationSearch />
   <router-view/>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import HeadTitle from '@/components/HeadTitle.vue';
+  import NavigationSearch from '@/components/NavigationSearch.vue';
 
   export default defineComponent({
     name: 'App',
 
     components: {
-      HeadTitle,
+      NavigationSearch,
     },
   })
 </script>

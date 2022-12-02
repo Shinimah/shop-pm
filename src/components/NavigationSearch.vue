@@ -45,7 +45,7 @@
 
   export default defineComponent({
 
-    name: 'HeadTitle',
+    name: 'NavigationSearch',
 
     components: {
       SearchIc,
