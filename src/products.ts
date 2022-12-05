@@ -1,6 +1,6 @@
 export const products = [
     {
-        img: 'Image.png',
+        img: 'typing-photo.png',
         imgAlt: 'type',
         desc: 'Vintage Typewriter to post asewsome stories about UI design and webdev',
         price: '$49.50',
@@ -8,7 +8,7 @@ export const products = [
         rating: '4.05',
     },
     {
-        img: 'boots.png',
+        img: 'boots-photo.png',
         imgAlt: 'boots',
         desc: 'Lee Pucker design. Leather botinki for handsome designers. Free shipping',
         price: '$13.95',
@@ -16,7 +16,7 @@ export const products = [
         rating: '4.56',
     },
     {
-        img: 'cat.png',
+        img: 'cat-photo.png',
         imgAlt: 'cat',
         desc: 'Timesaving kitten to save months on development. Playful, cute, cheap!',
         price: '$128.99',
@@ -24,7 +24,7 @@ export const products = [
         rating: '4.87',
     },
     {
-        img: 'plastic.png',
+        img: 'plastic-photo.png',
         imgAlt: 'plastic',
         desc: 'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
         price: '$12.48',
@@ -32,7 +32,7 @@ export const products = [
         rating: '4.99',
     },
     {
-        img: 'oil.png',
+        img: 'oil-photo.png',
         imgAlt: 'oil',
         desc: 'Creativity stimulating lotion. Drink every morning to generate better ideas!',
         price: '$12.48',
@@ -40,7 +40,7 @@ export const products = [
         rating: '4.99',
     },
     {
-        img: 'paper.png',
+        img: 'paper-photo.png',
         imgAlt: 'paper',
         desc: 'Prototyping items to create a lot of useless things...',
         price: '$128.99',
@@ -48,7 +48,7 @@ export const products = [
         rating: '4.87',
     },
     {
-        img: 'pants.png',
+        img: 'pants-photo.png',
         imgAlt: 'pants',
         desc: 'John Von Ebalkin SPRING',
         price: '$13.95',
@@ -56,7 +56,7 @@ export const products = [
         rating: '4.56',
     },
     {
-        img: 'notes.png',
+        img: 'notes-photo.png',
         imgAlt: 'notes',
         desc: 'Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY',
         price: '$9.50',
@@ -64,7 +64,7 @@ export const products = [
         rating: '4.77',
     },
     {
-        img: 'tea.png',
+        img: 'tea-photo.png',
         imgAlt: 'tea',
         desc: 'Professional teadrinking set for every designer and developer',
         price: '$128.99',
@@ -72,7 +72,7 @@ export const products = [
         rating: '4.87',
     },
     {
-        img: 'flower.png',
+        img: 'flower-photo.png',
         imgAlt: 'flower',
         desc: 'One string Bonsai description',
         price: '$11.68',
@@ -80,7 +80,7 @@ export const products = [
         rating: '4.99',
     },
     {
-        img: 'lipstic.png',
+        img: 'lipstic-photo.png',
         imgAlt: 'lipstic',
         desc: 'Simply best item in town to shine bright with your Nine Inch Nails',
         price: '$1.25',
@@ -88,7 +88,7 @@ export const products = [
         rating: '4.77',
     },
     {
-        img: 'brushes.png',
+        img: 'brushes-photo.png',
         imgAlt: 'brushes',
         desc: 'KISTOCHKI & KRASIBO. Top cosmetic brand from Chelyabinsk is here!',
         price: '$23.25',

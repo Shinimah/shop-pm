@@ -1,0 +1,135 @@
+<template>
+    <div class="right">
+        <div class="rightUp">
+            <div class="options">
+                <button class="btn">
+                    <div>
+                        <label class="sort" for="sel">Sort by</label>
+                        <select name="" id="sel">
+                            <option value="">Useless first</option>
+                            <option value="">Usable first</option>
+                        </select>
+                    </div>
+                </button>
+                <div class="btn2">
+                    <select name="" >
+                        <option value="">Condition</option>
+                        <option value="">Price</option>
+                        <option value="">Size</option>
+                    </select>
+                </div>
+                <div class="btn2">
+                    <select name="">
+                        <option value="">Delivery options</option>
+                        <option value="">Other options</option>
+                    </select>
+                </div>
+            </div>
+
+            <ButtonFilter class="btn-filter"/>
+            <ButtonView class="btn-view"/>
+
+        </div>
+
+        <p><strong>Related</strong></p>
+
+        <ul class="product-list">
+            <li
+                class="product-list__item"
+                v-for="(product, i) in list" 
+                :key="i"
+            >
+                <ProductItem :item="product" />
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script lang="ts">
+    import { defineComponent } from 'vue';
+    import ProductItem from '@/components/ProductItem.vue';
+    import ButtonFilter from '@/components/ButtonFilter.vue'
+    import ButtonView from '@/components/ButtonView.vue';
+import { mapGetters } from 'vuex';
+import { GETTERS } from '@/store';
+
+    export default defineComponent ({
+        name: 'CompTwo',
+        
+        components: {
+            ProductItem,
+            ButtonFilter,
+            ButtonView,
+        },
+
+        computed: {
+            ...mapGetters({
+                list: GETTERS.GET_PRODUCTS,
+            })
+        }
+    })
+</script>
+
+<style lang="scss" scoped>
+    .right {
+        position: relative;
+        width: 1114px;
+    }
+
+    @mixin buttons {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 4px;
+        align-items: flex-start;
+    }
+
+    .rightUp {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1px;
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+    }
+
+    .sort {
+        padding: 5px;
+    }
+
+    .btn-view {
+    margin-right: 1px;
+    }
+
+    .btn-filter {
+    margin-right: 150px;
+    }
+
+    .btn {
+        @include buttons;
+    }
+
+    .btn2 {
+        @include buttons;
+        height: 19px;
+    }
+
+    #sel {
+        padding: 0 6px;
+    }
+
+    .product-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+</style>
