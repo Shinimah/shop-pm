@@ -2,24 +2,20 @@
     <div class="right">
         <div class="rightUp">
             <div class="options">
-                        <label class="sort" for="sel">Sort by</label>
-                        <select name="" id="sel">
-                            <option value="">Useless first</option>
-                            <option value="">Usable first</option>
-                        </select>
-                <div class="btn">
-                    <select name="" >
-                        <option value="">Condition</option>
-                        <option value="">Price</option>
-                        <option value="">Size</option>
-                    </select>
-                </div>
-                <div class="btn">
-                    <select name="">
-                        <option value="">Delivery options</option>
-                        <option value="">Other options</option>
-                    </select>
-                </div>
+                <label class="sort" for="sel">Sort by</label>
+                <select name="" id="sel">
+                    <option value="">Useless first</option>
+                    <option value="">Usable first</option>
+                </select>
+                <select class="btn" id="sel" name="">
+                    <option value="">Condition</option>
+                    <option value="">Price</option>
+                    <option value="">Size</option>
+                </select>
+                <select class="btn" id="sel" name="">
+                    <option value="">Delivery options</option>
+                    <option value="">Other options</option>
+                </select>
             </div>
 
             <ButtonFilter class="btn-filter"/>
