@@ -1,9 +1,7 @@
 <template>
     <div class="left">
-        <div class="leftTitle">
-            <div id="iconV">
-                <TitleIcon />
-            </div>
+        <div class="left-title">
+            <TitleIcon class="icon-v"/>
             <h2>Departments</h2>
         </div>
         <AllCategories />
@@ -38,8 +36,8 @@
         height: 1928px;
     }
 
-    .leftTitle {
-        display: inline-flex;
+    .left-title {
+        display: flex;
         padding: 8px;
         margin: 30px 0;
         border: solid rgb(194, 194, 255);
@@ -51,75 +49,11 @@
             }
     }
 
-    .leftTitle h2 {
+    h2 {
         margin: 15px 50px;
     }
 
-    #iconV {
+    .icon-v {
         margin: 12px 1px;
-    }
-
-    .btn2 {
-        position: relative;
-        margin: 40px 0 10px;
-        padding-left: 10px;
-        text-align: left;
-        background-color: rgb(255, 255, 255);
-        border-radius: 0.5vmin;
-        width: 304px;
-        height: 40px;
-    }
-
-    .filter {
-        width: 304px;
-        padding: 5px 10px 10px;
-        margin: 20px 0;
-        background-color: #F7F7FA;
-    }
-
-    .catalog {
-        position: relative;
-        display: flexbox;
-        width: 100%;
-        font-weight: 400;
-    }
-
-    .right {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
-    .note {
-        font-size: 16px;
-    }
-
-    .note2 {
-        font-size: 14px;
-    }
-
-    .line p {
-        margin: 0 10px;
-    }
-
-    .down {
-        position: absolute;
-        right: 5px;
-        bottom: 5px;
-    }
-
-    .headFilter {
-        display: flex;
-        position: relative;
-    }
-
-    .up {
-        position: absolute;
-        top: 18px;
-        right: 5px;
-    }
-
-    h2:hover {
-        color: red;
     }
 </style>

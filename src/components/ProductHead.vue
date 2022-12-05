@@ -1,6 +1,6 @@
 <template>
     <div class="right">
-        <div class="rightUp">
+        <div class="right-up">
             <div class="options">
                 <button class="btn">
                     <div>
@@ -11,14 +11,14 @@
                         </select>
                     </div>
                 </button>
-                <div class="btn2">
+                <div class="btn-2">
                     <select name="" >
                         <option value="">Condition</option>
                         <option value="">Price</option>
                         <option value="">Size</option>
                     </select>
                 </div>
-                <div class="btn2">
+                <div class="btn-2">
                     <select name="">
                         <option value="">Delivery options</option>
                         <option value="">Other options</option>
@@ -87,7 +87,7 @@ import { GETTERS } from '@/store';
         align-items: flex-start;
     }
 
-    .rightUp {
+    .right-up {
         display: flex;
         align-items: center;
         padding-bottom: 1px;
@@ -114,7 +114,7 @@ import { GETTERS } from '@/store';
         @include buttons;
     }
 
-    .btn2 {
+    .btn-2 {
         @include buttons;
         height: 19px;
     }

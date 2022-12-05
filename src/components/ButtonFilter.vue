@@ -1,8 +1,8 @@
 <template>
     <div class="filter">
-        <button class="btn2">Show all</button>
-        <button class="btn2">Auction</button>
-        <button class="btn2">Buy now</button>
+        <button class="btn">Show all</button>
+        <button class="btn">Auction</button>
+        <button class="btn">Buy now</button>
     </div>
 </template>
 
@@ -25,7 +25,7 @@
         color: #2264D1;
     }
 
-    .btn2 {
+    .btn {
         height: 36px;
         width: 90px;
         border: none;

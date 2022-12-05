@@ -8,12 +8,8 @@
       />
     </div>
     <div class="main">
-      <div class="main_left">
-        <CategoryCheckbox />
-      </div>
-      <div class="main_right">
-        <ProductHead />
-      </div>
+      <CategoryCheckbox class="main-left"/>
+      <ProductHead class="main-right"/>
     </div>
   </div>
 </template>
@@ -65,11 +61,11 @@
     align-items: center;
   }
 
-  .main_left {
+  .main-left {
     margin: 0 40px 50px 100px;
   }
 
-  .main_right {
+  .main-right {
     margin: 0 100px 50px 20px;
   }
 </style>

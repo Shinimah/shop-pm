@@ -1,10 +1,8 @@
 <template>
-  <div class="menuItem" @click="paint">
-    <div class="item">
-        <svg class="img">
-          <use :xlink:href="getIcon"></use>
-        </svg>
-    </div>
+  <div class="menu-item" @click="paint">
+    <svg class="img">
+      <use :xlink:href="getIcon"></use>
+    </svg>
     <p>{{item.element}}</p>
   </div>
 </template>
@@ -43,7 +41,7 @@
     color: #42b983;
   }
 
-  .menuItem {
+  .menu-item {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -55,8 +53,8 @@
     color: #9696A0;
   }
 
-  .menuItem:hover, 
-  .menuItem:hover p {
+  .menu-item:hover, 
+  .menu-item:hover p {
     color: red;
   }
 

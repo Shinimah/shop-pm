@@ -3,7 +3,7 @@
         <ul>
             <li>
                 <header class="item" @click="showList">
-                    <div class="itemTitle">
+                    <div class="item-title">
                         <ArrowDown 
                             :class="['arrow', {'_close': !visible}]"
                         />
@@ -90,7 +90,7 @@
         color: #787885;
     }
 
-    .itemTitle {
+    .item-title {
         display: flex;
         align-items: center;
     }
