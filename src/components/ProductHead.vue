@@ -2,28 +2,20 @@
     <div class="right">
         <div class="rightUp">
             <div class="options">
-                <button class="btn">
-                    <div>
-                        <label class="sort" for="sel">Sort by</label>
-                        <select name="" id="sel">
-                            <option value="">Useless first</option>
-                            <option value="">Usable first</option>
-                        </select>
-                    </div>
-                </button>
-                <div class="btn2">
-                    <select name="" >
-                        <option value="">Condition</option>
-                        <option value="">Price</option>
-                        <option value="">Size</option>
-                    </select>
-                </div>
-                <div class="btn2">
-                    <select name="">
-                        <option value="">Delivery options</option>
-                        <option value="">Other options</option>
-                    </select>
-                </div>
+                <label class="sort" for="sel">Sort by</label>
+                <select name="" id="sel">
+                    <option value="">Useless first</option>
+                    <option value="">Usable first</option>
+                </select>
+                <select class="btn" id="sel" name="">
+                    <option value="">Condition</option>
+                    <option value="">Price</option>
+                    <option value="">Size</option>
+                </select>
+                <select class="btn" id="sel" name="">
+                    <option value="">Delivery options</option>
+                    <option value="">Other options</option>
+                </select>
             </div>
 
             <ButtonFilter class="btn-filter"/>
@@ -79,7 +71,7 @@ import { GETTERS } from '@/store';
     @mixin buttons {
         display: flex;
         align-items: center;
-        height: 36px;
+        height: 19px;
         margin: 10px;
         padding: 10px;
         background-color: white;
@@ -112,11 +104,6 @@ import { GETTERS } from '@/store';
 
     .btn {
         @include buttons;
-    }
-
-    .btn2 {
-        @include buttons;
-        height: 19px;
     }
 
     #sel {
