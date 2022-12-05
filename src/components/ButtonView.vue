@@ -23,7 +23,6 @@
 <style lang="scss" scoped>
     .img-filter {
         display: flex;
-        align-content: flex-end;
         margin: 0px 30px;
         width: 190px;
         height: 36px;

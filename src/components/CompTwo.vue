@@ -74,7 +74,6 @@
     .rightUp {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
         padding-bottom: 1px;
     }
 
@@ -88,7 +87,6 @@
     }
 
     .btn-view {
-    align-items: flex-end;
     margin-right: 1px;
     }
 

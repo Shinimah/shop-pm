@@ -72,7 +72,7 @@
   })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -81,7 +81,8 @@
   }
 
   nav {
-    display: ruby;
+    display: flex;
+    align-items: center;
     padding: 30px;
     width: 1920px;
 
@@ -134,7 +135,7 @@
   }
 
   .search {
-    font-size: large;
+    font-size: 20px;
     padding-left: 45px;
     padding-right: 45px;
     width: 668px;
