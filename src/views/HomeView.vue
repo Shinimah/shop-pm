@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <div class="menu">
+  <main class="home">
+    <nav class="menu">
       <MenuHead
         v-for="(item, index) in menu"
         :key="index"
         :item="item"
       />
-    </div>
+    </nav>
     <div class="main">
       <CategoryCheckbox class="main-left"/>
       <ProductHead class="main-right"/>
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">

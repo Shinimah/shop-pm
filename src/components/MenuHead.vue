@@ -1,10 +1,10 @@
 <template>
-  <div class="menu-item" @click="paint">
+  <button class="menu-item" @click="paint">
     <svg class="img">
       <use :xlink:href="getIcon"></use>
     </svg>
     <p>{{item.element}}</p>
-  </div>
+  </button>
 </template>
 
 <script lang="ts">
@@ -50,6 +50,7 @@
     padding: 0 1px;
     border: none;
     border-radius: 0.5vmin;
+    background-color: aliceblue;
     color: #9696A0;
   }
 

@@ -1,24 +1,20 @@
 <template>
-    <div class="right">
+    <nav class="right">
         <div class="right-up">
             <div class="options">
-                <button class="btn">
-                    <div>
-                        <label class="sort" for="sel">Sort by</label>
-                        <select name="" id="sel">
-                            <option value="">Useless first</option>
-                            <option value="">Usable first</option>
-                        </select>
-                    </div>
-                </button>
-                <div class="btn-2">
+                <label class="sort" for="sel">Sort by</label>
+                <select name="" id="sel">
+                    <option value="">Useless first</option>
+                    <option value="">Usable first</option>
+                </select>
+                <div class="btn">
                     <select name="" >
                         <option value="">Condition</option>
                         <option value="">Price</option>
                         <option value="">Size</option>
                     </select>
                 </div>
-                <div class="btn-2">
+                <div class="btn">
                     <select name="">
                         <option value="">Delivery options</option>
                         <option value="">Other options</option>
@@ -42,7 +38,7 @@
                 <ProductItem :item="product" />
             </li>
         </ul>
-    </div>
+    </nav>
 </template>
 
 <script lang="ts">
@@ -114,7 +110,7 @@ import { GETTERS } from '@/store';
         @include buttons;
     }
 
-    .btn-2 {
+    .btn {
         @include buttons;
         height: 19px;
     }
