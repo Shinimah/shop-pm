@@ -1,5 +1,5 @@
 <template>
-    <div class="right">
+    <nav class="right">
         <div class="right-up">
             <div class="options">
                 <label class="sort" for="sel">Sort by</label>
@@ -34,7 +34,7 @@
                 <ProductItem :item="product" />
             </li>
         </ul>
-    </div>
+    </nav>
 </template>
 
 <script lang="ts">

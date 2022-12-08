@@ -1,5 +1,5 @@
 <template>
-    <div class="list"> 
+    <nav class="list"> 
         <ul>
             <li>
                 <header class="item" @click="showList">
@@ -23,7 +23,7 @@
                 </div>
             </li>
         </ul>    
-    </div>
+    </nav>
 </template>
 
 <script lang="ts">
