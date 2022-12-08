@@ -1,6 +1,6 @@
 <template>
     <div class="right">
-        <div class="rightUp">
+        <div class="right-up">
             <div class="options">
                 <label class="sort" for="sel">Sort by</label>
                 <select name="" id="sel">
@@ -79,7 +79,7 @@ import { GETTERS } from '@/store';
         align-items: flex-start;
     }
 
-    .rightUp {
+    .right-up {
         display: flex;
         align-items: center;
         padding-bottom: 1px;

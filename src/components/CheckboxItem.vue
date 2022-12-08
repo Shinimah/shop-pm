@@ -7,7 +7,7 @@
             />
         </header>
         
-        <div class="checItem"
+        <div class="chec-item"
             v-for="(filt, index2) in item.filt"
             :key="index2"
         >
@@ -87,8 +87,9 @@
         }
     }
 
-    .checItem {
+    .chec-item {
         font-size: 16px;
         line-height: 150%;
     }
+    
 </style>

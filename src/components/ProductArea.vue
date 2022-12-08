@@ -53,13 +53,6 @@
         border: none;
     }
 
-    .item {
-        display: inline-block;
-        width: 250px;
-        height: 492px;
-        margin: 0 7px;
-    }
-
     .footer {
         display: flex;
         flex-flow: row wrap;

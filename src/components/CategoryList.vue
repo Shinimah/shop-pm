@@ -61,11 +61,6 @@
         padding-left: 10px;
     }
 
-    span {
-        font-size: 14px;
-        position: relative;
-    }
-
     .btn {
         position: relative;
         margin: 10px 40px;
@@ -78,17 +73,6 @@
     .list {
         display: inline;
         align-items: center;
-
     }
 
-    .arrow {
-        transition: 0.15s linear transform;
-        &._close {
-            transform: rotate(90deg);
-        }
-    }
-
-    .item:hover {
-        color: red;
-    }
 </style>

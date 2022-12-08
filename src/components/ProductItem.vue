@@ -8,9 +8,9 @@
         </router-link>
         <div class="rating">
             <StarRating />
-            <p class="rate">{{item.rating}}</p>
+            <p>{{item.rating}}</p>
             <button @click="liking" class="btn">
-                <HeartIcon class="like"/>
+                <HeartIcon />
                      Watch
             </button>
         </div>

@@ -9,7 +9,7 @@
             </div>   
             <ul>
                 <li>   
-                    <div class="itemLast"
+                    <div class="item-last"
                     v-for="(sub3, index) in item.sub3"
                         :key="index"
                         v-show="visible"
@@ -104,7 +104,7 @@
         @include item;
     }
 
-    .itemLast {
+    .item-last {
         @include item;
         margin-left: 20px;
         line-height: 140%;
