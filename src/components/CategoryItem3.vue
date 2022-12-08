@@ -14,11 +14,11 @@
                         :key="index"
                         v-show="visible"
                     >
-                            {{sub3.element}}
+                        {{sub3.element}}
                     </div>     
-                    <button class="btn" 
-                                @click="visible=!visible" 
-                                v-show="!visible"
+                    <button type="button" class="btn" 
+                        @click="visible=!visible" 
+                        v-show="!visible"
                     >
                         Show more
                         <ArrowDown />

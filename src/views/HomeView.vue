@@ -7,10 +7,10 @@
         :item="item"
       />
     </nav>
-    <div class="main">
+    <section class="main">
       <CategoryCheckbox class="main-left"/>
       <ProductHead class="main-right"/>
-    </div>
+    </section>
   </main>
 </template>
 

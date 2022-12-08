@@ -1,11 +1,11 @@
 <template>
-  <div class="item">
+  <section class="item">
     <svg class="img">
       <use :xlink:href="getIcon"></use>
     </svg>
     <p class="title">{{item.title}}</p>
     <p class="message">{{item.message}}</p>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

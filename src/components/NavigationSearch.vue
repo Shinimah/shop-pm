@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <img id="logo" src="../assets/icons/logo-group.svg"/>
-    <h1>Shopka</h1>
+    <img id="logo" src="../assets/icons/logo-group.svg" alt="logo"/>
+    <h1 class="title">Shopka</h1>
     <router-link 
       class="links" to="/sell"
     >
@@ -24,14 +24,10 @@
     >
       Consume Electronics
     </router-link>
-    <button 
-      class="btn-head" @click="sign"
-    >
+    <button type="button" class="btn-head" @click="sign">
       Sign In
     </button>
-    <button 
-      class="btn-head" @click="Mycard"
-    >
+    <button type="button" class="btn-head" @click="Mycard">
       My card
     </button>
     <img src="../assets/images/avatar-man.png" alt="photo">
@@ -100,7 +96,7 @@
     margin-right: 0;
   }
 
-  h1 {
+  .title {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 36px;
     font-weight: 500;

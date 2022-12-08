@@ -1,8 +1,8 @@
 <template>
     <div class="filter">
-        <button class="btn">Show all</button>
-        <button class="btn">Auction</button>
-        <button class="btn">Buy now</button>
+        <button type="button" class="btn">Show all</button>
+        <button type="button" class="btn">Auction</button>
+        <button type="button" class="btn">Buy now</button>
     </div>
 </template>
 

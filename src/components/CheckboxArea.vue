@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <section>
         <CheckboxItem
             v-for="(item, index) in check"
             :key="index"
             :item="item"
         />
-    </div>
+    </section>
 </template>
 
 <script lang="ts">

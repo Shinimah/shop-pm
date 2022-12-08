@@ -9,7 +9,7 @@
             />
         </li>
           <li>
-            <button class="btn" 
+            <button type="button" class="btn" 
               @click="showList"
             >
               Expand
