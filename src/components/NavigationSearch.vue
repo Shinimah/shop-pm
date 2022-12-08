@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <img id="logo" src="../icons/Group1.svg"/>
+        <img id="logo" src="../assets/icons/logo-group.svg"/>
         <p class="title">Shopka</p>
         <router-link 
           class="links" to="/sell"
@@ -20,28 +20,28 @@
             <CloseIc class="icon-close" @click="clearInput"/>
         </div>
         <router-link 
-          class="links2" to="/ce"
+          class="links-2" to="/ce"
         >
             Consume Electronics
         </router-link>
         <button 
-          class="btnHead" @click="sign"
+          class="btn-head" @click="sign"
         >
             Sign In
         </button>
         <button 
-          class="btnHead" @click="Mycard"
+          class="btn-head" @click="Mycard"
         >
             My card
         </button>
-        <img src="./images/Photo.png" alt="photo">
+        <img src="../assets/images/avatar-man.png" alt="photo">
     </nav>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import SearchIc from './iconComp/search.vue';
-  import CloseIc from './iconComp/close.vue';
+  import SearchIc from './iconComp/SearchIcon.vue';
+  import CloseIc from './iconComp/CloseIcon.vue';
 
   export default defineComponent({
 
@@ -75,17 +75,14 @@
 
 <style scoped lang="scss">
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-  }
-
   nav {
     display: ruby;
     padding: 30px;
     width: 1920px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
 
     a {
       font-weight: bold;
@@ -109,7 +106,7 @@
     padding: 0 20px;
   }
 
-  .btnHead {
+  .btn-head {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -154,20 +151,12 @@
     }
   }
 
-  .links2 {
+  .links-2 {
     margin-left: 30px;
     margin-right: 125px;
     font-size: 18px;
     &:hover {
       color: red;
-    }
-  }
-
-  .button {
-    color: #42b983;
-
-    &:hover {
-      color: #800350;
     }
   }
   
