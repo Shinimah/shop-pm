@@ -76,7 +76,8 @@
 <style scoped lang="scss">
 
   nav {
-    display: ruby;
+    display: flex;
+    align-items: center;
     padding: 30px;
     width: 1920px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
