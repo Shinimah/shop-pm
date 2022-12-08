@@ -16,7 +16,7 @@
                     >
                             {{sub3.element}}
                     </div>     
-                    <button class="btn" 
+                    <button type="button" class="btn" 
                         @click="showList" 
                         v-show="!visible"
                     >

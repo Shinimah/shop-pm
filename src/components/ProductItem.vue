@@ -1,5 +1,5 @@
 <template>
-    <div class="item">
+    <section class="item">
         <router-link to="/prod">
             <img :src="require(`@/assets/images/${item.img}`)" :alt="item.imgAlt">
             <p class="description">{{item.desc}}</p>
@@ -9,12 +9,12 @@
         <div class="rating">
             <StarRating />
             <p>{{item.rating}}</p>
-            <button @click="liking" class="btn">
+            <button type="button" class="btn" @click="liking">
                 <HeartIcon />
                      Watch
             </button>
         </div>
-    </div>
+    </section>
 </template>
 
 <script lang="ts">

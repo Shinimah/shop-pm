@@ -1,9 +1,9 @@
 <template>
-  <button class="menu-item" @click="paint">
+  <button type="button" class="menu-item" @click="paint">
     <svg class="img">
       <use :xlink:href="getIcon"></use>
     </svg>
-    <p>{{item.element}}</p>
+    <span class="item-element">{{item.element}}</span>
   </button>
 </template>
 
@@ -55,7 +55,7 @@
   }
 
   .menu-item:hover, 
-  .menu-item:hover p {
+  .menu-item:hover span {
     color: red;
   }
 
@@ -66,7 +66,7 @@
     padding: 5px 70px;
   }
 
-  p {
+  .item-element {
     display: flex;
     align-items: center;
     text-align: center;

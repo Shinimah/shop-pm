@@ -1,5 +1,5 @@
 <template>
-    <div class="left">
+    <section class="left">
         <div class="left-title">
             <TitleIcon class="icon-v"/>
             <h2>Departments</h2>
@@ -9,7 +9,7 @@
           btn="Collapsed filters"
         />
         <CheckLeft2 />
-    </div>
+    </section>
 </template>
 
 <script lang="ts">

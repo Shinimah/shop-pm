@@ -1,6 +1,6 @@
 <template>
     <nav class="right">
-        <div class="right-up">
+        <section class="right-up">
             <div class="options">
                 <label class="sort" for="sel">Sort by</label>
                 <select name="" id="sel">
@@ -18,10 +18,10 @@
                 </select>
             </div>
 
-            <ButtonFilter class="btn-filter"/>
-            <ButtonView class="btn-view"/>
+            <ButtonFilter type="button" class="btn-filter"/>
+            <ButtonView type="button" class="btn-view"/>
 
-        </div>
+        </section>
 
         <p><strong>Related</strong></p>
 

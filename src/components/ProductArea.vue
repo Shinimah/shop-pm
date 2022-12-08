@@ -1,18 +1,18 @@
 <template>
-    <div class="stores">
+    <section class="stores">
         <ProductItem
             v-for="(item, index) in products"
             :key="index"
             :item="item"
         />
-    </div>
-    <div class="footer">
+    </section>
+    <section class="footer">
         <FooterItem
             v-for="(item2, index) in footer"
             :key="index"
             :item="item2"
         />
-    </div>
+    </section>
 </template>
 
 <script lang="ts">

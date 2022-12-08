@@ -1,5 +1,5 @@
 <template>
-    <div class="title"> 
+    <main class="title"> 
         <header @click="showList">
             <h3>{{item.element}}</h3>
             <ArrowDown 
@@ -7,7 +7,7 @@
             />
         </header>
         
-        <div class="chec-item"
+        <section class="chec-item"
             v-for="(filt, index2) in item.filt"
             :key="index2"
         >
@@ -15,8 +15,8 @@
                 <input type="checkbox">               
                  {{filt.element}}
             </label>
-        </div>
-    </div>
+        </section>
+    </main>
 </template>
 
 <script lang="ts">

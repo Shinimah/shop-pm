@@ -3,12 +3,12 @@
         <ul>
             <li>
                 <header class="item" @click="showList">
-                    <div class="item-title">
+                    <h5 class="item-title">
                         <ArrowDown 
                             :class="['arrow', {'_close': !visible}]"
                         />
                         {{item.element}}
-                    </div>
+                    </h5>
                     <span class="under" v-if="item.under">
                         <br>
                         {{item.under}}
@@ -93,6 +93,11 @@
     .item-title {
         display: flex;
         align-items: center;
+        margin-bottom: 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 16px;
     }
 
     .item:hover {

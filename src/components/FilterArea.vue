@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="showList">
+    <button type="button" class="btn" @click="showList">
         {{btn}}
         <ArrowDown 
             :class="['arrow', {'_close': !visible}]"
