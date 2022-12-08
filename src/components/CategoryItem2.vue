@@ -1,5 +1,5 @@
 <template>
-    <uL>
+    <ul>
         <li>
             <div class="item" @click="visible=!visible">
                 <ArrowDown 
@@ -15,7 +15,7 @@
                 />            
             </div>
        </li>
-    </uL>
+    </ul>
 </template>
 
 <script lang="ts">

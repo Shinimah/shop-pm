@@ -1,41 +1,41 @@
 <template>
-    <nav>
-        <img id="logo" src="../assets/icons/logo-group.svg"/>
-        <p class="title">Shopka</p>
-        <router-link 
-          class="links" to="/sell"
-        >
-            Sell on Shopka
-        </router-link>
-        <router-link 
-          class="links" to="/reg"
-        >
-            Register
-        </router-link> 
-        <div class="search-wrapper">
-            <SearchIc class="icon"/>
-            <input type="text"  
-                class="search" placeholder="searching..."
-                v-model="inputValue">
-            <CloseIc class="icon-close" @click="clearInput"/>
-        </div>
-        <router-link 
-          class="links-2" to="/ce"
-        >
-            Consume Electronics
-        </router-link>
-        <button 
-          class="btn-head" @click="sign"
-        >
-            Sign In
-        </button>
-        <button 
-          class="btn-head" @click="Mycard"
-        >
-            My card
-        </button>
-        <img src="../assets/images/avatar-man.png" alt="photo">
-    </nav>
+  <nav>
+    <img id="logo" src="../assets/icons/logo-group.svg"/>
+    <h1>Shopka</h1>
+    <router-link 
+      class="links" to="/sell"
+    >
+      Sell on Shopka
+    </router-link>
+    <router-link 
+      class="links" to="/reg"
+    >
+      Register
+    </router-link> 
+    <div class="search-wrapper">
+      <SearchIc class="icon"/>
+      <input type="text"  
+        class="search" placeholder="searching..."
+        v-model="inputValue">
+      <CloseIc class="icon-close" @click="clearInput"/>
+    </div>
+    <router-link 
+      class="links-2" to="/ce"
+    >
+      Consume Electronics
+    </router-link>
+    <button 
+      class="btn-head" @click="sign"
+    >
+      Sign In
+    </button>
+    <button 
+      class="btn-head" @click="Mycard"
+    >
+      My card
+    </button>
+    <img src="../assets/images/avatar-man.png" alt="photo">
+  </nav>
 </template>
 
 <script lang="ts">
@@ -100,7 +100,7 @@
     margin-right: 0;
   }
 
-  .title {
+  h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 36px;
     font-weight: 500;

@@ -1,23 +1,21 @@
 <template>
-    <div>
-        <ul class="list">
-            <li>
-                <CategoryItem
-                    v-for="(item, index) in list"
-                    :key="index"
-                    :item="item"
-                    v-show="!visible"
-                />
-            </li>
-            <li>
-                <button class="btn" 
-                  @click="showList"
-                >
-                  Expand
-                </button>
-            </li>  
-        </ul>
-    </div>
+    <ul class="list">
+        <li>
+            <CategoryItem
+                v-for="(item, index) in list"
+                :key="index"
+                :item="item"
+                v-show="!visible"
+            />
+        </li>
+          <li>
+            <button class="btn" 
+              @click="showList"
+            >
+              Expand
+            </button>
+        </li>  
+    </ul>
 </template>
 
 <script lang="ts">

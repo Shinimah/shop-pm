@@ -17,8 +17,8 @@
                             {{sub3.element}}
                     </div>     
                     <button class="btn" 
-                                @click="showList" 
-                                v-show="!visible"
+                        @click="showList" 
+                        v-show="!visible"
                     >
                         Show more
                         <ArrowDIc />
